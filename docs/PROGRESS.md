@@ -11,7 +11,7 @@ Read this file at the start of every session. It is the only state carried betwe
 | 2 | `02_prepare_daily.py` | Sonnet → Opus review | Reviewed | a3f46a4 |
 | 3 | `03_regressions.ipynb` | Sonnet → Opus review | Reviewed | 4b16c5e |
 | 4 | `04_weather_years.ipynb` | Sonnet → Opus review | Reviewed | 19e6221 |
-| 5 | `findings.md` | Opus | Reviewed | |
+| 5 | `findings.md` | Opus | Reviewed | 17c2587 |
 
 Status values: `Not started` / `In progress` / `Done – awaiting review` / `Reviewed` / `Needs fixes`.
 
