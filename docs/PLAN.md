@@ -223,6 +223,7 @@ Each card is self-contained with the Spec sections it references.
 Write a plain script that pulls the raw data from QueryTool into `data/raw/`. It must not transform anything beyond column selection.
 
 - Import `qt_post_request` from `helper_functions` and always pass `required_columns`. Read WMO IDs and date ranges from `inputs/station_mapping.csv`.
+- **Truncation guard:** QueryTool can return HTTP 200 with a truncated CSV stream. Before caching, every chunk must have strictly parseable timestamps and a last timestamp that reaches the chunk's end; otherwise raise and do not cache.
 - **Caching:** each chunk is written as `data/raw/<source>/<chunk>.parquet`, and the script skips chunks whose file already exists. At the end, concatenate each source into `data/raw/<source>.parquet`. To refresh, delete the files.
 - **Queries**
   1. `demand_oper`: `mms.demandoperationalactual`, one query per calendar year covering 2020-12-01 → 2026-09-01 00:00 inclusive (half-open `> start` / `<= end` bounds on interval-ending timestamps are fine if used consistently). Filter `REGIONID in ('NSW1','QLD1','SA1','TAS1','VIC1')`.
@@ -234,7 +235,7 @@ Write a plain script that pulls the raw data from QueryTool into `data/raw/`. It
 
      Month bounds on SETTLEMENTDATE are `> first-of-month 00:00` and `<= first-of-next-month 00:00`.
   3. `rooftop_pv`: `mms.rooftop_pv_actual`, `TYPE = 'MEASUREMENT'`, the 5 regions, one query per year, 2018-03-08 → 2026-09-01. Also run one small query for **SATELLITE** annual totals per region and year (SQL aggregate per year; `sum(POWER)*0.5/1000` as GWh). Save it as `data/raw/pv_satellite_annual.parquet`.
-  4. `metar`: `bom.metar`, columns `MET_DATETIME, ID_NUM, T_DB`. One query per (WMO ID, calendar year), from max(2000-12-31, valid_from − 1 day) to min(valid_to + 1 day, 2026-09-01).
+  4. `metar`: `bom.metar`, columns `MET_DATETIME, ID_NUM, T_DB`. Station range: max(2000-12-31, valid_from − 1 day) to min(valid_to + 1 day, 2026-09-01). One query per **calendar month** covering all mapped stations, each clipped to its own range; chunk file `data/raw/metar/YYYY-MM.parquet`. (Changed from per (WMO ID, year) on 2026-09-25: the table's primary key leads with MET_DATETIME, so every query scans all stations for its date range; year queries stall past the proxy limit and return truncated streams.)
   5. `daily_maxmin`: `bom.daily_max_min_temperature`, for the mapped IDs over the same ranges, one query per ID.
 - Print and write `outputs/extract_summary.md`. For each source, give row count, min/max timestamp and distinct IDs/regions. Also give rows per region-day (demand, PV) or obs per station-day (METAR) as min/median/max.
 - **Acceptance**
