@@ -6,7 +6,7 @@ Read this file at the start of every session. It is the only state carried betwe
 
 | Phase | Deliverable | Owner | Status | Commit |
 |---|---|---|---|---|
-| 0 | Repo layout, docs, station mapping | Opus | Reviewed | (baseline) |
+| 0 | Repo layout, docs, station mapping | Opus | Reviewed | b09c785 |
 | 1 | `01_extract_data.py` | Sonnet → Opus review | Not started | |
 | 2 | `02_prepare_daily.py` | Sonnet → Opus review | Not started | |
 | 3 | `03_regressions.ipynb` | Sonnet → Opus review | Not started | |
