@@ -11,7 +11,7 @@ Read this file at the start of every session. It is the only state carried betwe
 | 2 | `02_prepare_daily.py` | Sonnet → Opus review | Reviewed | a3f46a4 |
 | 3 | `03_regressions.ipynb` | Sonnet → Opus review | Reviewed | 4b16c5e |
 | 4 | `04_weather_years.ipynb` | Sonnet → Opus review | Reviewed | 19e6221 |
-| 5 | `findings.md` | Opus | Not started | |
+| 5 | `findings.md` | Opus | Reviewed | |
 
 Status values: `Not started` / `In progress` / `Done – awaiting review` / `Reviewed` / `Needs fixes`.
 
@@ -261,7 +261,28 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
   - The heatmap shows SA1 summer months (Nov–Mar) hitting ±10% in several years. The annual effect is diluted by mild shoulder months.
 
 ### Phase 5: findings
-_Not started._
+**Status: Reviewed** (2026-09-25). Written by Opus (orchestrating session) per the card.
+
+**Files created**
+- `findings.md` (repo root)
+
+**Inputs used:** `outputs/regression_results.csv`, `coefficient_flags.csv`, `overlap_check.csv`, `materiality_summary.csv`, `weather_year_annual.csv`, `weather_year_monthly.csv`, the figures, and Methodology §6.1–6.3 (checked with `pdftotext`: traces are scaled to annual energy and max/min targets "such that seasonality ... [is] preserved").
+
+**Verdict: Refine.**
+- Mainland β are positive with p < 0.001 everywhere.
+- The M2/M3/M4-LR heating spread fails ±25% in NSW1 (36%), QLD1 (25.2%) and SA1 (48%); cooling ≤ 11%.
+- The annual ±1.5% test is met only by SA1 (CY −1.89/+1.84%). The monthly 20% test is met nowhere.
+- No mainland region is at Stop level. TAS1 is at Stop level on materiality (M2 max +0.74%) and is recommended for dropping.
+
+**Extra calculations made in the write-up** (not new outputs; derived from Phase 4 CSVs):
+- Seasonal DJF/JJA net %, for seasons with all 3 months valid. Mainland summer ranges are about ±3–5%.
+- Annual range with the heating adjustment rescaled to the M3 β. No new region crosses ±1.5%.
+
+**Interpretation choices**
+- §8 materiality was applied per region, on underlying/M2. The overall reading gives the same verdict.
+- The QLD1 heating spread of 25.2% is counted as a fail (strict threshold).
+
+**Open issues:** none.
 
 ## Open issues
 - None.
