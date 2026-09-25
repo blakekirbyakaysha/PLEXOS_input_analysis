@@ -42,6 +42,11 @@ date,region,in_xlsx,in_csv
 2021-12-31,SA1,False,True
 2022-04-19,TAS1,False,True
 2022-08-01,NSW1,False,True
+2022-09-22,NSW1,False,True
+2022-09-22,QLD1,False,True
+2022-09-22,SA1,False,True
+2022-09-22,TAS1,False,True
+2022-09-22,VIC1,False,True
 2022-12-24,QLD1,False,True
 2022-12-24,SA1,False,True
 2022-12-25,SA1,False,True

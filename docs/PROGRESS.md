@@ -31,7 +31,7 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
 | 2026-09-25 | Added one control: `xmas_period` (24 Dec – 2 Jan) | Planning |
 | 2026-09-25 | METAR extracted per calendar month (all mapped stations in one query, each clipped to its range), not per (station, year); every chunk from every source checked for truncation before caching. Year queries stalled ~130 s and returned HTTP 200 with a truncated stream (e.g. 29 rows ending mid-timestamp). `bom.metar` PK is (MET_DATETIME, ID_NUM, ID_NAME), so cost scales with date range, not station count | User approved monthly + guard; all-station grouping by Opus for the same reason |
 | 2026-09-25 | SA1 operational demand ≤ 0 is real (PV export) and kept; the ≤ 0 hard failure applies to other regions only. METAR `T_DB = -9999` is treated as a missing obs | Opus Phase 2 review |
-| 2026-09-25 | Holiday inputs edited: VIC AFL GF Friday added for 2022-09-23 (row missing) and 2025-09-26 (row had no date) | User |
+| 2026-09-25 | Holiday inputs edited: VIC AFL GF Friday added for 2022-09-23 (row missing) and 2025-09-26 (row had no date); 2022-09-22 National Day of Mourning added for all 5 regions | User |
 
 ## Handover notes
 
@@ -94,7 +94,7 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
 - `data/processed/daily_model_dataset.parquet`: 46,870 rows (5 regions × 9,374 days), 2001-01-01 → 2026-08-31, unique on (region, date)
 - `outputs/input_inspection.md`
 - `outputs/data_quality.csv`: 635 rows, one per (region, date, series, reason)
-- `outputs/holiday_mismatch.csv`: 54 rows, xlsx vs CSV for 2019–2023 (informational)
+- `outputs/holiday_mismatch.csv`: 59 rows, xlsx vs CSV for 2019–2023 (informational)
 
 **Commands**
 - `C:/anaconda3/python.exe -W ignore 02_prepare_daily.py` (takes a few minutes; prints the acceptance and reviewer checks at the end)
@@ -140,8 +140,8 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
 - Holiday mismatches are Easter Saturday/Sunday, SA Christmas Eve and NYE part-days, regional show days (xlsx) and bank holidays (CSV). All are expected and informational.
 
 **Open issues**
-- ~~VIC1 AFL Grand Final Friday missing on 2022-09-23 and 2025-09-26.~~ **Resolved (user-approved).** Added the 2022-09-23 row to `australian_public_holidays_2022.csv` and filled `20250926` into the undated 2025 row. The script was re-run: both days now have `holiday = 1`, `holiday_mismatch.csv` has 54 rows, and all checks are unchanged.
-- The 2022-09-22 National Day of Mourning (a one-off holiday in all states) is in neither holiday source, so `holiday = 0` there. It falls 3 weeks into the primary window. Not added; waiting on the user.
+- ~~VIC1 AFL Grand Final Friday missing on 2022-09-23 and 2025-09-26.~~ **Resolved (user-approved).** Added the 2022-09-23 row to `australian_public_holidays_2022.csv` and filled `20250926` into the undated 2025 row. The script was re-run: both days now have `holiday = 1`, `holiday_mismatch.csv` had 54 rows at that point, and all checks are unchanged.
+- ~~2022-09-22 National Day of Mourning missing from both holiday sources.~~ **Resolved (user-approved).** Added rows for nsw, qld, sa, tas and vic to `australian_public_holidays_2022.csv`. After the re-run, all 5 regions have `holiday = 1` that day. `holiday_mismatch.csv` now has 59 rows: the extra 5 are CSV-only because the xlsx lacks this date too. All checks are unchanged.
 
 ### Phase 3: regressions
 _Not started._
@@ -153,4 +153,4 @@ _Not started._
 _Not started._
 
 ## Open issues
-- The 2022-09-22 National Day of Mourning is not in the holiday inputs (see Phase 2). Minor and not blocking.
+- None.
