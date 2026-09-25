@@ -10,7 +10,7 @@ Read this file at the start of every session. It is the only state carried betwe
 | 1 | `01_extract_data.py` | Sonnet → Opus review | Reviewed | dd2ba88 |
 | 2 | `02_prepare_daily.py` | Sonnet → Opus review | Reviewed | a3f46a4 |
 | 3 | `03_regressions.ipynb` | Sonnet → Opus review | Reviewed | 4b16c5e |
-| 4 | `04_weather_years.ipynb` | Sonnet → Opus review | Not started | |
+| 4 | `04_weather_years.ipynb` | Sonnet → Opus review | Reviewed | |
 | 5 | `findings.md` | Opus | Not started | |
 
 Status values: `Not started` / `In progress` / `Done – awaiting review` / `Reviewed` / `Needs fixes`.
@@ -205,7 +205,60 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
   - TAS1 CDD is weak: B/M2 underlying p = 0.065; F total_gwh p = 0.67.
 
 ### Phase 4: weather years
-_Not started._
+**Status: Reviewed** (2026-09-25). The Sonnet agent built and ran `04_weather_years.ipynb`. Opus reviewed it, fixed two figure issues and corrected the handover (see Review notes).
+
+**Files created**
+- `04_weather_years.ipynb`
+- `outputs/weather_year_monthly.csv` (5,328 rows: 5 regions x 2 dep_vars x 2 coef_sets x region-year-range x 12 months)
+- `outputs/weather_year_annual.csv` (740 rows: CY + FY, valid years only)
+- `outputs/materiality_summary.csv` (20 rows: 5 regions x 2 dep_vars x 2 coef_sets)
+- `outputs/figures/annual_adjustment.png`, `outputs/figures/monthly_heatmap.png`
+
+**Commands**
+- `C:/anaconda3/python.exe -m jupyter nbconvert --to notebook --execute --inplace 04_weather_years.ipynb` (run from repo root; a few seconds). Re-run twice more after cosmetic figure/markdown edits; all three runs passed from a fresh kernel with no errors.
+
+**Key numbers**
+- Coefficients (run A, primary window 2022-09-01→2026-08-31): one row per (region, model, dep_var) confirmed unique for M2 and M4.
+- Valid CY weather years (of the region's full S7 range) / excluded years (invalid months):
+  - NSW1: 13 of 18 (2008–2025). Excluded: 2008 (Sep,Oct), 2010 (Apr,May), 2016 (Feb,Aug), 2017 (Sep), 2024 (Aug).
+  - QLD1: 17 of 18. Excluded: 2016 (Aug).
+  - SA1: 22 of 25 (2001–2025). Excluded: 2001 (Jul,Oct,Dec), 2002 (Aug), 2003 (Sep).
+  - TAS1: 20 of 25. Excluded: 2001 (8 months, Dec2001–Jan2002 METAR outage plus others), 2002 (5 months), 2003 (4 months), 2004 (Jan,Feb), 2014 (Jun).
+  - VIC1: 23 of 25. Excluded: 2001 (Jul), 2010 (Mar).
+  - These match the Phase 2 temp-exclusion pattern (2001–2004 concentration, Dec2001–Jan2002 outage, scattered later single-region-months).
+- Valid FY years (labelled by ending year): NSW1 FY2011–FY2024 minus the 2016/2017 exclusions overlapping FY boundaries → 11 valid FYs; QLD1 16 (FY2009–FY2025 minus FY2017 overlap); SA1 21 (FY2005–FY2025 range, minus early-2000s exclusions); TAS1 20 (FY2005–FY2025 range); VIC1 22 (FY2003–FY2025 range). Exact lists are reproducible from `dd_df`/`valid_fy` in the notebook.
+- Denominators (annual, mean daily x 365.25, GWh): underlying / oper: NSW1 75,114 / 66,388; QLD1 62,600 / 54,103; SA1 14,581 / 11,436; TAS1 10,428 / 10,044; VIC1 49,460 / 43,956.
+- Annual CY `net_pct` (underlying_gwh, M2) min/max/range: NSW1 −1.01/+0.85/1.85; QLD1 −1.24/+1.27/2.52; SA1 −1.89/+1.84/3.74; TAS1 −0.53/+0.74/1.27; VIC1 −0.99/+0.76/1.75. M4_LR ranges are 3–10% wider than M2 in every region (e.g. SA1 M4_LR range 4.08). FY ranges are similar magnitude to CY (e.g. NSW1 FY range 2.15).
+- `oper_gwh` ranges are close to `underlying_gwh` on the mainland but noticeably wider for SA1 (M2 CY range 4.81 vs 3.74 for underlying) . *(Opus correction: the SA1 β are nearly equal for underlying and oper (M2 HDD 0.65 vs 0.64, CDD 1.79 vs 1.81). The wider oper % range comes from the smaller denominator (11,436 vs 14,581 GWh), not from PV damping the weather response.)*
+- Monthly exceedance shares (underlying, M2): `>5%` — NSW1 2.9%, QLD1 1.4%, SA1 7.1%, TAS1 0.0%, VIC1 1.7% of valid region-months; all well under the 20% threshold in every region/dep_var/coef_set combination in `materiality_summary.csv`. `>2.5%` shares are higher (10–36%) but that measure has no explicit decision-criteria threshold.
+- Mean-vs-median (POE50) offsets (`cy_offset_net_pct`): small in every region, |offset| ≤ 0.21% for CY, ≤ 0.28% for FY across all combos — the mean/median choice barely matters here.
+- Acceptance cell: (a) monthly sums equal annual values within 1e-9 for every (region, dep_var, coef_set, CY/FY year) — passed; (b) standards recomputed from valid years only match `std` dict exactly, no invalid year contributes — passed; (c) year/month coverage matches S7 exactly per region (no 2026, no pre-2008 NSW1/QLD1) — passed; (d) CY mean of annual HDD/CDD over valid years equals Σ_m std_m — passed by construction and asserted.
+- VIC1 2019 CY hand-check (underlying, M2), recomputed independently from raw parquet rows: HDD 868.98, CDD 163.83, heat_adj/cool_adj/net_adj and net_pct 0.486% all matched the CSV row to 1e-9. Independent standard re-derivation (valid-year list, monthly standards) also matched exactly.
+
+**Deviations from Spec**
+- None identified. The orchestrator's clarifications (#1–#10) were followed as written; no ambiguity required an "Open issues" entry.
+- Cosmetic-only: `annual_adjustment.png` x-axis uses an integer year locator (`MaxNLocator(integer=True)`) since matplotlib's default produced float-looking tick labels (e.g. "2007.5") on some facets with wide year ranges; this does not change any data or the figure's substance.
+
+**Open issues**
+- None blocking. Note for Phase 5: decision-criteria materiality (§8) is mixed across regions on the annual-range test (±1.5%) — SA1, QLD1 and NSW1 CY ranges straddle or approach ±1.5% while TAS1 and VIC1 stay under it — but the monthly ±5%-in-≥20%-of-months test is not met anywhere (max share 7.1%, SA1). This is exactly the kind of split result §8 calls "Refine," but the actual Proceed/Stop/Refine call, and any β sign/significance/spread checks against run A/M2/M3/M4-LR from Phase 3, belong to Phase 5.
+
+**Review notes (Opus)**
+- Code reviewed against §7 and clarifications #1–#10:
+  - The valid-month rule uses `ok_temp` only, with the day-share scaling.
+  - Standards come from valid CY years only and are shared by the CY and FY roll-ups.
+  - The monthly denominator uses the days in that weather-year month; the annual denominator is ×365.25.
+  - FYs require all 12 months valid and inside the CY range.
+  - Invalid years are omitted from the annual CSV. β come from run A M2 and M4 (LR) with a uniqueness assert.
+- Independent vectorised recompute (my own code, not the notebook's) of underlying/M2 for all 5 regions reproduced n_CY, CY min/max and the >5% / >2.5% monthly shares exactly ✔.
+- The notebook runs from a fresh kernel. Acceptance checks (a)–(d) and the VIC1 2019 hand-check pass ✔.
+- **Handover correction on §8:** the annual test (max ≥ +1.5% or min ≤ −1.5%) is met only by **SA1** (underlying M2 −1.89/+1.84). With M4_LR it is SA1 only; with oper it is also SA1 only. QLD1 (−1.24/+1.27), NSW1, VIC1 and TAS1 do not meet it. The Stop half-levels (±0.75%) are exceeded in every region (TAS1 barely: −0.53/+0.74 CY underlying M2). The monthly ≥ 20%-of-months test is met nowhere (max share 17.3%, SA1 oper M4_LR).
+- Edits made in review (the notebook was re-executed after them):
+  - `annual_adjustment.png`: lines were drawn straight across excluded years (e.g. NSW1 2015→2018). The series is now reindexed to every weather year, so gaps show; the title notes this.
+  - `monthly_heatmap.png`: the colour scale was set by one SA1 extreme (13.9%), which left most cells near-white. It is now capped at ±10% with an extended colourbar, and the label is wrapped.
+  - The `date` parse now uses an explicit `%Y-%m-%d` format.
+- Observations for Phase 5:
+  - NSW1 loses 5 of 18 CY years to a single invalid month each, so its annual range rests on 13 years. The 90% rule is strict for that region.
+  - The heatmap shows SA1 summer months (Nov–Mar) hitting ±10% in several years. The annual effect is diluted by mild shoulder months.
 
 ### Phase 5: findings
 _Not started._
