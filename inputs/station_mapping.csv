@@ -1,0 +1,8 @@
+region,subregion,station_name,bom_site,wmo_id,valid_from,valid_to,hdd_threshold,cdd_threshold
+NSW1,SNW,Bankstown Airport AWS,066137,94765,2007-02-20,,17.0,21.5
+QLD1,SQ,Archerfield Airport,040211,94575,2007-02-20,,17.0,22.0
+SA1,CSA,Adelaide (Kent Town),023090,94675,2000-01-01,2020-07-31,16.5,22.0
+SA1,CSA,Adelaide (West Terrace),023000,94648,2020-08-01,,16.5,22.0
+VIC1,MEL,Melbourne Regional Office,086071,94868,2000-01-01,2015-01-05,16.5,21.0
+VIC1,MEL,Melbourne (Olympic Park),086338,95936,2015-01-06,,16.5,21.0
+TAS1,TAS,Hobart (Ellerslie Road),094029,94970,2000-01-01,,16.0,20.0
