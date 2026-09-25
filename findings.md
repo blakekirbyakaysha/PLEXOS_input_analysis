@@ -183,3 +183,77 @@ How §8 was applied: the materiality test was read region by region, on underlyi
 - **Definition mismatch.** Operational demand here is as-generated; OPSO traces are sent-out. The difference is immaterial for percentages.
 - **TOTALDEMAND** (used only for the rolling history) has definitional level shifts. Rooftop PV (MEASUREMENT) is only available from 2018.
 - **Industrial loads dilute percentages.** Large industrial loads and outages remain in the demand series.
+
+## Addendum (2026-09-25): checks after Phase 5
+
+These checks were run in discussion after Phase 5. They use this repo's outputs plus AEMO 2026 ESOO trace charts from `C:\Dev\Demand_Analysis\Charts` (FY2027, POE50, OPSO_MODELLING, Step Change). No new output files were produced. The summary for management is [summary_for_manager.md](summary_for_manager.md).
+
+### A1. AEMO traces already carry the monthly weather effect
+
+- **Annual energy is equalised.** AEMO's annual energy across reference years is effectively identical: NSW spread about 0.06% of the median (`REGION_NSW_2_spread_by_fy.png`). This confirms the §6.1 reading.
+- **The within-year variation matches weather.** In the monthly heatmaps (`REGION_<X>_6_monthly_heatmap_FY2027.png`), variation between reference years is concentrated in Nov–Mar, and is small in shoulder months and in TAS. This matches this study's monthly spread by month.
+- **Standout cells were compared with our weather effect.** We picked 16 heatmap cells by eye and compared each with our `oper_gwh`/M2 monthly net % from `weather_year_monthly.csv`. Reference-year rows are FY-labelled. 13 of 16 agree in direction:
+  - SA 2008-03: +18.5%
+  - SA 2004-01: −11.1%
+  - SA 2006-02: −10.1%
+  - VIC 2013-03: +8.3%
+  - VIC 2004-01: −6.7%
+  - NSW 2019-01: +7.2%
+  - NSW 2008-02: −4.7%
+  - QLD 2019-03: +4.2%
+  - QLD 2011-01: −2.8%
+- **The non-matches:**
+  - SA 2022-01 (−0.9%) and QLD 2022-05 (+0.1%) are high in AEMO's traces. This is possibly cloud/PV, which the temperature-only model lacks.
+  - VIC 2006-02 is weak (−2.2%).
+- **Size:** AEMO's monthly deviations look about 1.5–2× ours, read by eye (e.g. SA 2008-03 about +30%).
+- **Limitation:** the trace parquet (`Cuts/monthly.parquet`) was written by pyarrow 25 and cannot be read with this repo's pyarrow 19. That is why the comparison is by eye.
+
+### A2. VIC July–August 2026 miss is not weather
+
+- **The weather was normal.**
+  - July 2026: mean 10.83 °C vs the 2001–25 average of 10.86 °C; HDD/day 5.67 vs 5.64.
+  - August was mild: 12.03 °C vs 11.66 °C.
+- **An out-of-sample M2 fit under-predicts both months.** The model was fitted to 2022-09-01 → 2026-06-30. Residuals:
+
+  | Month | Operational | Underlying | Rooftop PV |
+  |---|---|---|---|
+  | July 2026 | +11.3 GWh/day (+7.7%) | +9.3 | −2.0 |
+  | August 2026 | +12.2 GWh/day (+9.1%) | +9.7 | −2.4 |
+
+  Residuals rise from about +2 GWh/day in March 2026.
+- **The step is across all hours.** July 2026 vs July 2025 (identical HDD) shows operational demand about +390 MW overnight, about +490 MW at 10–16 h, and +417 MW all day. August shows about +220 MW overnight and +640 MW midday. This points to demand level (growth or new load) plus a midday component (PV below trend or midday load).
+
+### A3. Confidence in the annual materiality figures, and outlook to 2030
+
+- **Statistical uncertainty is small.** β CIs are about ±10%. Systematic bias is the main risk, and it points mostly downward:
+  - single-station errors-in-variables attenuation
+  - a linear response
+  - M2 gives the lowest HDD β. Rescaling heating to the M3 β changes annual ranges by < 0.2 pp (§1).
+  - AEMO's monthly swings are about 1.5–2× ours (A1).
+- **Changing demand drivers do not enter the weather-year replay.** Historical years contribute only degree days; β come from 2022–26.
+- **They do matter for forward years.** The annual weather effect, as a % of energy, was recomputed with each run-D rolling window's β and that window's mean `total_gwh`. The metric is the s.d. of CY annual net % across weather years:
+
+  | Region | 2010–13 window | 2022–25 window | Change (per year) | 2030 by linear extrapolation | Uplift vs 2025 |
+  |---|---|---|---|---|---|
+  | NSW | 0.41 | 0.58 | +41% (≈ 2.9%) | 0.62–0.67 | ×1.07–1.16 |
+  | QLD | 0.57 | 0.78 | +37% (≈ 2.6%) | 0.86–0.92 | ×1.10–1.18 |
+  | SA | 0.99 | 1.20 | +21% (≈ 1.6%) | 1.32–1.37 | ×1.10–1.14 |
+  | VIC | 0.38 | 0.67 | +76% (≈ 4.8%) | 0.79–0.83 | ×1.18–1.24 |
+  | TAS | 0.37 | 0.34 | −8% | 0.34–0.36 | ×1.00–1.06 |
+
+  The low and high 2030 values come from fitting the 2018–25 and 2013–25 windows. These use TOTALDEMAND, so SA levels differ from the underlying figures. Only the growth rates are used.
+- **Resulting range to 2030:**
+  - "Today" is the largest |annual net %| in any weather year (§4, underlying M2 CY).
+  - The low end is today × the uplift above.
+  - The high end is today × 2, the AEMO-vs-ours monthly ratio from A1. It is not also multiplied by the uplift, because the FY2027 traces already embed AEMO's forward view.
+
+  | Region | Today | Low end | High end | Range to 2030 |
+  |---|---|---|---|---|
+  | NSW | 1.01 | 1.08–1.17 | 2.0 | ±1.1–2% |
+  | QLD | 1.27 | 1.40–1.50 | 2.5 | ±1.4–2.5% |
+  | VIC | 0.99 | 1.17–1.23 | 2.0 | ±1.2–2% |
+  | SA | 1.89 | 2.08–2.15 | 3.8 | ±2.1–4% |
+  | TAS | 0.74 | 0.74–0.78 | 1.5 | ±0.7–1.5% |
+
+  This is a trend extrapolation, not a forecast. It does not use AEMO's electrification or data-centre forecasts. Faster VIC gas-to-electric switching would push VIC higher; data-centre growth dilutes the percentage.
+- **Effect on the verdict:** Refine is unchanged. The practical recommendation is not to adjust annual energy now, and to revisit SA before 2030. Next step 1 (a revenue test) should use the upper end of these ranges.
