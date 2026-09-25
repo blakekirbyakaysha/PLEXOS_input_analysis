@@ -9,7 +9,7 @@ Read this file at the start of every session. It is the only state carried betwe
 | 0 | Repo layout, docs, station mapping | Opus | Reviewed | b09c785 |
 | 1 | `01_extract_data.py` | Sonnet → Opus review | Reviewed | dd2ba88 |
 | 2 | `02_prepare_daily.py` | Sonnet → Opus review | Reviewed | a3f46a4 |
-| 3 | `03_regressions.ipynb` | Sonnet → Opus review | Not started | |
+| 3 | `03_regressions.ipynb` | Sonnet → Opus review | Reviewed | |
 | 4 | `04_weather_years.ipynb` | Sonnet → Opus review | Not started | |
 | 5 | `findings.md` | Opus | Not started | |
 
@@ -144,7 +144,65 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
 - ~~2022-09-22 National Day of Mourning missing from both holiday sources.~~ **Resolved (user-approved).** Added rows for nsw, qld, sa, tas and vic to `australian_public_holidays_2022.csv`. After the re-run, all 5 regions have `holiday = 1` that day. `holiday_mismatch.csv` now has 59 rows: the extra 5 are CSV-only because the xlsx lacks this date too. All checks are unchanged.
 
 ### Phase 3: regressions
-_Not started._
+**Status: Reviewed** (2026-09-25). The Sonnet agent built and ran the notebook. Opus reviewed it, made two small edits (see Review notes) and re-executed it from a fresh kernel.
+
+**Files created**
+- `03_regressions.ipynb`
+- `outputs/regression_results.csv` (190 rows)
+- `outputs/coefficient_flags.csv` (10 rows: 5 regions x 2 dep vars)
+- `outputs/overlap_check.csv` (5 rows, one per region)
+- `outputs/figures/diag_{NSW1,QLD1,SA1,TAS1,VIC1}.png`, `outputs/figures/coef_comparison.png`, `outputs/figures/rolling_betas.png`
+
+**Commands**
+- `C:/anaconda3/python.exe -m jupyter nbconvert --to notebook --execute --inplace 03_regressions.ipynb` (run from repo root; ~1-2 min)
+
+**Key numbers**
+- Run A, M2, common-sample n by region matches the Phase 2 handover numbers exactly: NSW1 1434/1438 (underlying/oper), QLD1 1428/1432, SA1 1427/1432, TAS1 1428/1431, VIC1 1437/1441.
+- Run A, M2, underlying_gwh: beta_HDD / beta_CDD (GWh per degree-day), both p < 0.001 in every region:
+  - NSW1: 4.09 / 8.15 (r2 0.899)
+  - QLD1: 1.62 / 6.38 (r2 0.922)
+  - SA1: 0.65 / 1.79 (r2 0.870)
+  - TAS1: 0.32 / 0.20 (r2 0.760, CDD p = 0.0039 -- weakest CDD signal, as expected for a cold climate)
+  - VIC1: 2.42 / 5.96 (r2 0.880)
+  - All ten (region x dep_var) rows have `hdd_sign_ok`, `cdd_sign_ok`, `hdd_sig`, `cdd_sig` all True in `coefficient_flags.csv`.
+- The acceptance cell independently recomputed `n` for all 190 run-matrix rows via a fresh `select_sample()` call and matched the stored `n` exactly; it also confirmed every expected (run_id, region, model, dep_var, window) combination is present.
+- `hdd_rolling_range`/`cdd_rolling_range` (max/min - 1 of run D `total_gwh` beta over the 13 calendar-year rolling windows, 2013-2025): all finite (mins were positive in every region), e.g. NSW1 0.41/0.39 (HDD/CDD), QLD1 0.96/0.47, SA1 0.29/0.11, VIC1 0.61/0.48, TAS1 0.20/132.9. TAS1's CDD beta is small and swings from about 0.001 to 0.14 GWh/DD across the rolling windows (min in the 2022-2025 window) -- the guard for min beta <= 0 was not triggered, but the ratio is nonetheless dominated by TAS1's very weak, unstable cooling response and should be read with that caveat rather than as a stability problem comparable to the other regions.
+- `cdd_underlying_vs_oper_ratio` (run A M2 underlying/oper) is close to 1 everywhere (0.78-1.18), i.e. rooftop PV growth does not change the CDD response much over the primary window.
+- `overlap_check.csv`: corr(total_gwh, oper_gwh) on the common 2021-01-01->2026-08-31 sample: NSW1 0.9985, QLD1 0.9990, SA1 0.9827, TAS1 0.9547, VIC1 0.9907 (consistent with the Phase 2 handover figures computed on a slightly different sample). mean_ratio (total/oper) ranges 0.960 (VIC1) to 0.995 (QLD1).
+- All figures were opened and visually checked. `coef_comparison.png` and `rolling_betas.png` use a 5-colour region palette (PINE/AMBER/AZURE/AMARANTH/SPRING) chosen for mutual distinctness rather than the more natural but too-similar MOSS/JADE pairing; the diag-plot "fitted" line uses a neutral grey rather than an Akaysha colour so it never collides with a region's own colour (this mattered for QLD1, which is now amber).
+
+**Deviations from Spec**
+- The run-D "12 calendar-year rolling windows" wording in the orchestrator's clarification #3 does not match the run-matrix table, which lists 13 end years (2013...2025 inclusive). Implemented with all 13, matching the explicit table; flagged here rather than guessed silently.
+- `total_pv_gwh` rolling windows in run D use only the literal "rolling 4-year windows... starting >= 2019-01-01" (4 windows, end years 2022-2025); the extra one-off 2022-09->2026-08 window was not duplicated for `total_pv_gwh`, since the run-matrix table only lists the extra window on the `total_gwh` row.
+- `fit()` and `select_sample()` take an additional optional `extra_ok_cols` keyword beyond the four positional arguments in the task card, to support run E's `ok_temp_mm` requirement and run F's cross-checks against the other dependent variable's quality flag (per the orchestrator's clarifications #2 and #5). The four-argument call signature works unchanged for runs A, B, C and D.
+- `rolling_betas.png` plots `total_gwh` as the main line with CI band and overlays `total_pv_gwh` as unshaded "x" markers (only 4 points, 2022-2025); this was a judgement call to keep the figure legible rather than doubling the shaded bands.
+
+**Open issues**
+- None blocking. See the TAS1 CDD note above -- worth carrying into Phase 5's discussion of where a weather-year adjustment is and is not material.
+
+**Review notes (Opus)**
+- Code reviewed:
+  - The common sample is dep-var flag & ok_temp & ok_temp_lag (+ ok_temp_mm for E, and the other series' flag for F).
+  - `trend` is measured from each fit's own window start; windows are inclusive.
+  - Rolling windows are 4 calendar years (end_year − 3 → end_year).
+  - HAC maxlags = 7.
+  - The M4 LR terms come from `res.t_test` ✔.
+- Independent refit of NSW1 / A / M4 / underlying outside the notebook: n 1434; b_HDD 3.090 + b_HDD_lag1 1.471 = LR 4.561, SE 0.202, CI [4.165, 4.957]. All match the CSV exactly ✔.
+- Fresh-kernel `nbconvert --execute`:
+  - The first attempt hit a transient `OSError 22` saving `diag_VIC1.png` (file lock, probably the editor preview).
+  - The immediate rerun passed, including the acceptance cell (190 rows, all n matched).
+- Run matrix: A 40, B 40, C 5, D 70 total + 20 total_pv, E 5, F 10 ✔. My clarification #3 wrongly said "12" rolling windows; the agent correctly used 13.
+- Edits made in review:
+  - Appended a final **markdown** cell with the flag table (the card asks for markdown; the notebook had ended on a code cell). The values are copied from `coefficient_flags.csv`.
+  - Corrected the NSW1 rolling-range numbers above; the handover had quoted the M2/M3/M4-LR spreads.
+- Figures are legible. In the diag plots the grey fitted line partly hides the actual line; this is cosmetic and was not changed.
+- Magnitudes are plausible. NSW1 β_CDD ≈ 8 GWh/DD is above the card's indicative 1–5 range, but NSW1 underlying demand is ~200 GWh/day and the scatter shows a ~+50 GWh rise from 22 °C to 30 °C, so 8 is consistent (the range was never enforced).
+- Observations for Phase 5 (no conclusions drawn here):
+  - The HDD spread across M2/M3/M4-LR exceeds 25% for NSW1 (0.36) and SA1 (0.48) underlying, and for QLD1 oper (0.93). M2 (month dummies) gives the lowest HDD; M3 and M4-LR are higher.
+  - CDD spreads are ≤ 0.14 on the mainland.
+  - M1 → M2 attenuates HDD by 28–39% on the mainland for underlying (QLD1 underlying is the exception, +12%), and by 45–63% for oper.
+  - Run D shows βs trending up over time for NSW1/VIC1 HDD and for NSW1/QLD1/VIC1 CDD (e.g. VIC1 β_HDD 1.7 → 2.6), consistent with electrification and growth.
+  - TAS1 CDD is weak: B/M2 underlying p = 0.065; F total_gwh p = 0.67.
 
 ### Phase 4: weather years
 _Not started._
