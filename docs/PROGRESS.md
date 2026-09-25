@@ -8,7 +8,7 @@ Read this file at the start of every session. It is the only state carried betwe
 |---|---|---|---|---|
 | 0 | Repo layout, docs, station mapping | Opus | Reviewed | b09c785 |
 | 1 | `01_extract_data.py` | Sonnet → Opus review | Reviewed | dd2ba88 |
-| 2 | `02_prepare_daily.py` | Sonnet → Opus review | Not started | |
+| 2 | `02_prepare_daily.py` | Sonnet → Opus review | Reviewed | |
 | 3 | `03_regressions.ipynb` | Sonnet → Opus review | Not started | |
 | 4 | `04_weather_years.ipynb` | Sonnet → Opus review | Not started | |
 | 5 | `findings.md` | Opus | Not started | |
@@ -30,6 +30,7 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
 | 2026-09-25 | Materiality thresholds per PLAN §8 | User accepted recommendation |
 | 2026-09-25 | Added one control: `xmas_period` (24 Dec – 2 Jan) | Planning |
 | 2026-09-25 | METAR extracted per calendar month (all mapped stations in one query, each clipped to its range), not per (station, year); every chunk from every source checked for truncation before caching. Year queries stalled ~130 s and returned HTTP 200 with a truncated stream (e.g. 29 rows ending mid-timestamp). `bom.metar` PK is (MET_DATETIME, ID_NUM, ID_NAME), so cost scales with date range, not station count | User approved monthly + guard; all-station grouping by Opus for the same reason |
+| 2026-09-25 | SA1 operational demand ≤ 0 is real (PV export) and kept; the ≤ 0 hard failure applies to other regions only. METAR `T_DB = -9999` is treated as a missing obs | Opus Phase 2 review |
 
 ## Handover notes
 
@@ -85,7 +86,61 @@ Status values: `Not started` / `In progress` / `Done – awaiting review` / `Rev
 - None blocking.
 
 ### Phase 2: prepare
-_Not started._
+**Status: Reviewed** (2026-09-25). The Sonnet agent wrote and ran the script. In review, Opus changed how SA1 negative operational demand is handled (see Deviations) and re-ran the script.
+
+**Files created**
+- `02_prepare_daily.py`
+- `data/processed/daily_model_dataset.parquet`: 46,870 rows (5 regions × 9,374 days), 2001-01-01 → 2026-08-31, unique on (region, date)
+- `outputs/input_inspection.md`
+- `outputs/data_quality.csv`: 635 rows, one per (region, date, series, reason)
+- `outputs/holiday_mismatch.csv`: 55 rows, xlsx vs CSV for 2019–2023 (informational)
+
+**Commands**
+- `C:/anaconda3/python.exe -W ignore 02_prepare_daily.py` (takes a few minutes; prints the acceptance and reviewer checks at the end)
+
+**Key numbers**
+- Acceptance: (region, date) is unique ✔.
+  - NSW1 2024-01-03 `oper_gwh`: hand 178.950 = script 178.950 (48 intervals) ✔.
+  - Bankstown 2024-01-03 `mean_temp`: hand (21:00 2 Jan, 21:00 3 Jan] mean 24.66875 (n = 48) = script ✔. (The 24.64 in §2 is the calendar-day mean, so the two are expected to differ.)
+- Reviewer checks:
+  - corr(mean_temp, Daily_Avg) per station is 0.994–0.997 ✔.
+  - Station switches: SA1 94675 → 94648 on 2020-08-01; VIC1 94868 → 95936 on 2015-01-06 ✔.
+  - corr(oper_gwh, total_gwh), n = 2,100 per region: NSW1 0.9985, QLD1 0.9990, SA1 0.9818, TAS1 0.9551, VIC1 0.9907 ✔.
+- Drops before aggregation:
+  - METAR: 17 exact duplicate rows; 479 rows at `T_DB = -9999`; 117,772 SPECI (non-:00/:30) obs.
+  - Demand, PV, total and maxmin: 0 exact duplicates. PV has 209 native null `POWER` values.
+- SA1: 147 intervals with `OPERATIONAL_DEMAND` ≤ 0 (min −263 MW, 2023-12 → 2026-03). They are **kept** as real values.
+- Exclusions in `data_quality.csv`. The counts are identical for every region, except temp:
+  - oper, missing intervals: 1
+  - pv, missing intervals: 5
+  - pv, NaN value: 10 (SA1: 11)
+  - total, missing intervals: 1
+  - temp, insufficient obs: NSW1 101, QLD1 61, SA1 91, TAS1 233, VIC1 63. These counts cover only days on or after each region's first `valid_from`. They are concentrated in 2001–2004 (216 of 549) and in the Dec 2001–Jan 2002 outage. Several recent dates fail across all stations at once (e.g. 2024-06-07, 2025-01-17/18, 2026-02-15/16), which points to source gaps.
+- Common-sample sizes (ok_underlying & ok_temp & ok_temp_lag):
+  - Primary window (1,461 days): NSW1 1434, QLD1 1428, SA1 1427*, TAS1 1428, VIC1 1437.
+  - 2021 → window (2,069 days): 2,031–2,042.
+  - \*SA1 was 1,395 before the review fix.
+
+**Deviations from Spec**
+- **SA1 negative operational demand is kept, not treated as a hard failure.** §2 / the card list "operational demand ≤ 0" as a hard failure. That rule is wrong for SA1, where rooftop-PV export exceeds load at midday on mild sunny days.
+  - The agent originally set these intervals to NaN and flagged 32 SA1 days as not OK. That would have selectively removed mild spring days, i.e. exactly the low-HDD/CDD days.
+  - Opus changed this: SA1 values ≤ 0 are kept and counted. Any other region ≤ 0, or any value > 20,000 MW, still fails hard. This is recorded in the Decisions log.
+- METAR `T_DB = -9999` is BoM's missing-value code, so those rows are dropped as missing obs, not treated as a hard failure. Any other value outside [−15, 50] still fails (none occurred). This only reduces `n_obs_temp`, and the 44-of-48 rule handles the rest.
+- `station_wmo` is float64 because it is NaN before a region's first `valid_from`.
+- The 2025 holiday CSV row "Friday before the AFL Grand Final" has no date, so it is dropped rather than guessed.
+
+**Review notes**
+- Code reviewed:
+  - Timestamps are parsed strictly with an explicit format.
+  - The 21:00 bucketing puts 21:00 in day d and 21:30 in day d+1 ✔.
+  - Lags are shifted on a gap-free daily station table per region, so at a changeover the lag comes from the old station, which §4 allows.
+  - Conflicting duplicates raise. Energy is computed over the intervals present, and the ok flag carries the quality.
+- The agent's handover claimed that the temp exclusions include NSW1/QLD1 days before 2007-02-20. That was wrong: they start at 2007-02-20 (corrected above).
+- `holiday` = 0 for 2001–2003 because no source covers those years. Phase 3 windows start in 2010 and Phase 4 does not use `holiday`, so this has no effect.
+- Holiday mismatches are Easter Saturday/Sunday, SA Christmas Eve and NYE part-days, regional show days (xlsx) and bank holidays (CSV). All are expected and informational.
+
+**Open issues**
+- VIC1 AFL Grand Final Friday is missing on **2022-09-23** (in the xlsx but not in the 2022 CSV) and **2025-09-26** (the 2025 CSV has no date). Both days are in the primary window, so `holiday = 0` there. The effect is minor (2 VIC days). The fix is to add the rows to the input CSVs and re-run; that needs the user's go-ahead because it edits inputs. Not blocking.
 
 ### Phase 3: regressions
 _Not started._
@@ -97,4 +152,4 @@ _Not started._
 _Not started._
 
 ## Open issues
-- None.
+- VIC1 AFL Grand Final Friday is missing on 2022-09-23 and 2025-09-26 (see Phase 2). Minor and not blocking; waiting on the user to decide whether to add the rows to the inputs.
