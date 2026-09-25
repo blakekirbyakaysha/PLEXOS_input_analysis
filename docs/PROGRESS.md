@@ -8,7 +8,7 @@ Read this file at the start of every session. It is the only state carried betwe
 |---|---|---|---|---|
 | 0 | Repo layout, docs, station mapping | Opus | Reviewed | b09c785 |
 | 1 | `01_extract_data.py` | Sonnet → Opus review | Reviewed | dd2ba88 |
-| 2 | `02_prepare_daily.py` | Sonnet → Opus review | Reviewed | |
+| 2 | `02_prepare_daily.py` | Sonnet → Opus review | Reviewed | a3f46a4 |
 | 3 | `03_regressions.ipynb` | Sonnet → Opus review | Not started | |
 | 4 | `04_weather_years.ipynb` | Sonnet → Opus review | Not started | |
 | 5 | `findings.md` | Opus | Not started | |
