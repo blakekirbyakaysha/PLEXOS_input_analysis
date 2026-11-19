@@ -186,7 +186,7 @@ How §8 was applied: the materiality test was read region by region, on underlyi
 
 ## Addendum (2026-09-25): checks after Phase 5
 
-These checks were run in discussion after Phase 5. They use this repo's outputs plus AEMO 2026 ESOO trace charts from `C:\Dev\Demand_Analysis\Charts` (FY2027, POE50, OPSO_MODELLING, Step Change). No new output files were produced. The summary for management is [summary_for_manager.md](summary_for_manager.md).
+These checks were run in discussion after Phase 5. They use this repo's outputs plus AEMO 2026 ESOO trace charts from `Demand_Analysis/Charts` (FY2027, POE50, OPSO_MODELLING, Step Change). No new output files were produced. The summary for management is [summary_for_manager.md](summary_for_manager.md).
 
 ### A1. AEMO traces already carry the monthly weather effect
 
