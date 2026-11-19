@@ -21,7 +21,8 @@ desktop.ini
 .DS_Store
 
 # ---- Project-specific large data ----
-Demand_Analysis/data/
+Demand_Analysis/data/*
+!Demand_Analysis/data/reference/
 ESOO_gas_consumption/RE_gen.csv
 ESOO_gas_consumption/Available Capacity.csv
 ESOO_gas_consumption/Generation.csv

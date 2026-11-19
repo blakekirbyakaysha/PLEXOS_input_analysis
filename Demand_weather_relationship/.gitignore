@@ -1,3 +1,4 @@
-data/
+# data/ is committed (35 MB, all small parquet): it removes the NemPoint dependency for the signed-off analysis.
+!data/**
 __pycache__/
 .ipynb_checkpoints/
