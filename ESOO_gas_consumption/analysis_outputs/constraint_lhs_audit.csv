@@ -1,0 +1,117 @@
+Gas Zone Constraint,PLEXOS Generator,Coefficient,Offtake.csv Station,Present in Offtake.csv,Note
+Gas Zone Daily Offtake Limit Colongra,Colongra,1,Colongra,True,
+Gas Zone Daily Offtake Limit Gippsland,Bairnsdale,1,Bairnsdale,True,
+Gas Zone Daily Offtake Limit Gippsland,Bell Bay Three,1,,False,"In LHS but no matching row in Offtake.csv - unexplained gap, please verify"
+Gas Zone Daily Offtake Limit Gippsland,Jeeralang A,1,Jeeralang,True,
+Gas Zone Daily Offtake Limit Gippsland,Jeeralang B,1,Jeeralang,True,
+Gas Zone Daily Offtake Limit Gippsland,SEV new CCGT,1,SEV new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Gippsland,SEV new OCGT,1,SEV new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Gippsland,Smithfield Energy Facility,1,Smithfield,True,
+Gas Zone Daily Offtake Limit Gippsland,TAS new CCGT,1,TAS new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Gippsland,TAS new OCGT,1,TAS new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Gippsland,Tallawarra,1,Tallawarra,True,
+Gas Zone Daily Offtake Limit Gippsland,Tallawarra B,1,Tallawarra B,True,
+Gas Zone Daily Offtake Limit Gippsland,Tamar Valley Combined Cycle,1,Tamar Valley CCGT,True,
+Gas Zone Daily Offtake Limit Gippsland,Tamar Valley Peaking,1,Tamar Valley OCGT,True,
+Gas Zone Daily Offtake Limit Gippsland,Valley Power,1,Valley Power,True,
+Gas Zone Daily Offtake Limit Gippsland,WOO new CCGT,1,WOO new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Gippsland,WOO new OCGT,1,WOO new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Gladstone,GG new CCGT,1,GG new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Gladstone,GG new OCGT,1,GG new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Kurri Kurri,Hunter Power Station,1,Hunter,True,
+Gas Zone Daily Offtake Limit Melbourne,Laverton North,1,Laverton North,True,
+Gas Zone Daily Offtake Limit Melbourne,MEL new CCGT,1,MEL new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Melbourne,MEL new OCGT,1,MEL new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Melbourne,Newport,1,Newport,True,
+Gas Zone Daily Offtake Limit Melbourne,Somerton,1,Somerton,True,
+Gas Zone Daily Offtake Limit Moomba,Bolivar Power Station,1,Bolivar Power Station,True,
+Gas Zone Daily Offtake Limit Moomba,CNSW new CCGT,1,CNSW new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Moomba,CNSW new OCGT,1,CNSW new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Moomba,Dry Creek GT,1,Dry Creek,True,
+Gas Zone Daily Offtake Limit Moomba,Mintaro GT,1,Mintaro,True,
+Gas Zone Daily Offtake Limit Moomba,NNSW new CCGT,1,NNSW new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Moomba,NNSW new OCGT,1,NNSW new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Moomba,NSA new CCGT,1,NSA new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Moomba,NSA new OCGT,1,NSA new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Moomba,Osborne,1,Osborne,True,
+Gas Zone Daily Offtake Limit Moomba,Snapper,1,,False,"In LHS but no matching row in Offtake.csv - unexplained gap, please verify"
+Gas Zone Daily Offtake Limit NQGP,NQ new CCGT,1,NQ new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit NQGP,NQ new OCGT,1,NQ new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit NQGP,Townsville Power Station,1,Townsville,True,
+Gas Zone Daily Offtake Limit Newcastle,Colongra,1,Colongra,True,
+Gas Zone Daily Offtake Limit Newcastle,Hunter Power Station,1,Hunter,True,
+Gas Zone Daily Offtake Limit Newcastle,SNW new CCGT,1,SNW new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Newcastle,SNW new OCGT,1,SNW new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Northern,Barcaldine Power Station,1,Barcaldine,True,
+Gas Zone Daily Offtake Limit Northern,Braemar,1,Braemar,True,
+Gas Zone Daily Offtake Limit Northern,Braemar 2 Power Station,1,Braemar 2,True,
+Gas Zone Daily Offtake Limit Northern,CQ new CCGT,1,CQ new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Northern,CQ new OCGT,1,CQ new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Northern,Condamine A,1,Condamine,True,
+Gas Zone Daily Offtake Limit Northern,Darling Downs,1,Darling Downs,True,
+Gas Zone Daily Offtake Limit Northern,GG new CCGT,1,GG new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Northern,GG new OCGT,1,GG new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Northern,Lockyer Valley GT,1,Lockyer Valley GT,True,
+Gas Zone Daily Offtake Limit Northern,Oakey Power Station,1,Oakey,True,
+Gas Zone Daily Offtake Limit Northern,Roma,1,Roma,True,
+Gas Zone Daily Offtake Limit Northern,SQ new CCGT,1,SQ new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Northern,SQ new OCGT,1,SQ new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Northern,Swanbank E GT,1,Swanbank E,True,
+Gas Zone Daily Offtake Limit Port Campbell,Ladbroke Grove,1,Ladbroke Grove,True,
+Gas Zone Daily Offtake Limit Port Campbell,Mortlake,1,Mortlake OCGT,True,
+Gas Zone Daily Offtake Limit Port Campbell,SESA new CCGT,1,SESA new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Port Campbell,SESA new OCGT,1,SESA new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Port Campbell,WNV new CCGT,1,WNV new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Port Campbell,WNV new OCGT,1,WNV new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,Bairnsdale,1,Bairnsdale,True,
+Gas Zone Daily Offtake Limit Southern,Barker Inlet Power Station,1,Barker Inlet,True,
+Gas Zone Daily Offtake Limit Southern,Bell Bay Three,1,,False,"In LHS but no matching row in Offtake.csv - unexplained gap, please verify"
+Gas Zone Daily Offtake Limit Southern,Bolivar Power Station,1,Bolivar Power Station,True,
+Gas Zone Daily Offtake Limit Southern,CNSW new CCGT,1,CNSW new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,CNSW new OCGT,1,CNSW new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,CSA new CCGT,1,CSA new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,CSA new OCGT,1,CSA new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,Colongra,1,Colongra,True,
+Gas Zone Daily Offtake Limit Southern,Dry Creek GT,1,Dry Creek,True,
+Gas Zone Daily Offtake Limit Southern,Hallett GT,1,Hallett,True,
+Gas Zone Daily Offtake Limit Southern,Hunter Power Station,1,Hunter,True,
+Gas Zone Daily Offtake Limit Southern,Jeeralang A,1,Jeeralang,True,
+Gas Zone Daily Offtake Limit Southern,Jeeralang B,1,Jeeralang,True,
+Gas Zone Daily Offtake Limit Southern,Ladbroke Grove,1,Ladbroke Grove,True,
+Gas Zone Daily Offtake Limit Southern,Laverton North,1,Laverton North,True,
+Gas Zone Daily Offtake Limit Southern,MEL new CCGT,1,MEL new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,MEL new OCGT,1,MEL new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,Mintaro GT,1,Mintaro,True,
+Gas Zone Daily Offtake Limit Southern,Mortlake,1,Mortlake OCGT,True,
+Gas Zone Daily Offtake Limit Southern,NNSW new CCGT,1,NNSW new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,NNSW new OCGT,1,NNSW new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,NSA new CCGT,1,NSA new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,NSA new OCGT,1,NSA new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,Newport,1,Newport,True,
+Gas Zone Daily Offtake Limit Southern,Osborne,1,Osborne,True,
+Gas Zone Daily Offtake Limit Southern,Pelican Point,1,Pelican Point,True,
+Gas Zone Daily Offtake Limit Southern,Quarantine,1,Quarantine,True,
+Gas Zone Daily Offtake Limit Southern,SESA new CCGT,1,SESA new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,SESA new OCGT,1,SESA new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,SEV new CCGT,1,SEV new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,SEV new OCGT,1,SEV new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,SNSW new CCGT,1,SNSW new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,SNSW new OCGT,1,SNSW new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,SNW new CCGT,1,SNW new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,SNW new OCGT,1,SNW new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,Smithfield Energy Facility,1,Smithfield,True,
+Gas Zone Daily Offtake Limit Southern,Snapper,1,,False,"In LHS but no matching row in Offtake.csv - unexplained gap, please verify"
+Gas Zone Daily Offtake Limit Southern,Somerton,1,Somerton,True,
+Gas Zone Daily Offtake Limit Southern,TAS new CCGT,1,TAS new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,TAS new OCGT,1,TAS new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,Tallawarra,1,Tallawarra,True,
+Gas Zone Daily Offtake Limit Southern,Tallawarra B,1,Tallawarra B,True,
+Gas Zone Daily Offtake Limit Southern,Tamar Valley Combined Cycle,1,Tamar Valley CCGT,True,
+Gas Zone Daily Offtake Limit Southern,Tamar Valley Peaking,1,Tamar Valley OCGT,True,
+Gas Zone Daily Offtake Limit Southern,Torrens Island B,1,Torrens Island,True,
+Gas Zone Daily Offtake Limit Southern,Uranquinty,1,Uranquinty,True,
+Gas Zone Daily Offtake Limit Southern,Valley Power,1,Valley Power,True,
+Gas Zone Daily Offtake Limit Southern,WNV new CCGT,1,WNV new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,WNV new OCGT,1,WNV new OCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,WOO new CCGT,1,WOO new CCGT,False,Candidate/new-entrant plant - not built in this scenario
+Gas Zone Daily Offtake Limit Southern,WOO new OCGT,1,WOO new OCGT,False,Candidate/new-entrant plant - not built in this scenario

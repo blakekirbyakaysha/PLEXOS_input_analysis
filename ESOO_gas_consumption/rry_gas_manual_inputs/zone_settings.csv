@@ -1,0 +1,12 @@
+Zone_Key,Treatment,Transplant_Censored,Note
+colongra,adopt_rry,TRUE,
+gippsland,adopt_rry,TRUE,
+gladstone,median_offset,TRUE,
+kurrikurri,adopt_rry,TRUE,
+melbourne,median_offset,TRUE,
+moomba,adjust,TRUE,
+newcastle,adopt_rry,TRUE,
+northern,adjust,TRUE,
+nqgp,adjust,TRUE,
+portcampbell,adopt_rry,TRUE,
+southern,median_offset,TRUE,

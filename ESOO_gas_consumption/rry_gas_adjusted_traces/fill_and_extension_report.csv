@@ -1,0 +1,155 @@
+Series,Type,Days,Dates
+RRY GPG_Limit_Step_Change_S__Colongra_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Gippsland_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Gladstone_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Kurri Kurri_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Melbourne_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Moomba_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Newcastle_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Northern_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__NQGP_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Port Campbell_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+RRY GPG_Limit_Step_Change_S__Southern_GPG_Limit_TJ_5000_POE10.csv,filled_previous_day,1,2048-02-29
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Colongra_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gippsland_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Gladstone_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Kurri Kurri_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Melbourne_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Moomba_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Newcastle_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Northern_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_NQGP_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2011_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2012_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2013_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2014_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2015_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2016_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2017_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2018_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2019_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2020_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2021_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2022_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Southern_GPG_Limit_TJ_2023_POE10.csv,extended_repeat_last_year,1826,2046-01-01..2050-12-31 from 2045-01-01..2045-12-31
+GPG_Limit_STEP_CHANGE_Port Campbell_GPG_Limit_TJ_2012_POE10.csv,filled_median_of_other_RYs,9496,"2025-01-01..2050-12-31 (median of 12 RYs: [2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023])"

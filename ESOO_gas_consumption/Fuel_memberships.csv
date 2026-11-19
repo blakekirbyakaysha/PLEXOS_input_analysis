@@ -1,0 +1,299 @@
+﻿Collection,Parent Name,Child Name,Parent Category,Child Category
+Generator.Fuels,BW01,Bayswater,Black Coal NSW,Black Coal
+Generator.Fuels,BW02,Bayswater,Black Coal NSW,Black Coal
+Generator.Fuels,BW03,Bayswater,Black Coal NSW,Black Coal
+Generator.Fuels,BW04,Bayswater,Black Coal NSW,Black Coal
+Generator.Fuels,ER01,Eraring Energy,Black Coal NSW,Black Coal
+Generator.Fuels,ER02,Eraring Energy,Black Coal NSW,Black Coal
+Generator.Fuels,ER03,Eraring Energy,Black Coal NSW,Black Coal
+Generator.Fuels,ER04,Eraring Energy,Black Coal NSW,Black Coal
+Generator.Fuels,MP1,Mt Piper,Black Coal NSW,Black Coal
+Generator.Fuels,MP2,Mt Piper,Black Coal NSW,Black Coal
+Generator.Fuels,VP5,Vales Point B,Black Coal NSW,Black Coal
+Generator.Fuels,VP6,Vales Point B,Black Coal NSW,Black Coal
+Generator.Fuels,CALL_B_1,Callide B & C,Black Coal QLD,Black Coal
+Generator.Fuels,CALL_B_2,Callide B & C,Black Coal QLD,Black Coal
+Generator.Fuels,CPP_3,Callide B & C,Black Coal QLD,Black Coal
+Generator.Fuels,CPP_4,Callide B & C,Black Coal QLD,Black Coal
+Generator.Fuels,GSTONE1,Gladstone,Black Coal QLD,Black Coal
+Generator.Fuels,GSTONE2,Gladstone,Black Coal QLD,Black Coal
+Generator.Fuels,GSTONE3,Gladstone,Black Coal QLD,Black Coal
+Generator.Fuels,GSTONE4,Gladstone,Black Coal QLD,Black Coal
+Generator.Fuels,GSTONE5,Gladstone,Black Coal QLD,Black Coal
+Generator.Fuels,GSTONE6,Gladstone,Black Coal QLD,Black Coal
+Generator.Fuels,KPP_1,Kogan Creek,Black Coal QLD,Black Coal
+Generator.Fuels,MPP_1,Millmerran,Black Coal QLD,Black Coal
+Generator.Fuels,MPP_2,Millmerran,Black Coal QLD,Black Coal
+Generator.Fuels,STAN-1,Stanwell,Black Coal QLD,Black Coal
+Generator.Fuels,STAN-2,Stanwell,Black Coal QLD,Black Coal
+Generator.Fuels,STAN-3,Stanwell,Black Coal QLD,Black Coal
+Generator.Fuels,STAN-4,Stanwell,Black Coal QLD,Black Coal
+Generator.Fuels,TARONG#1,Tarong,Black Coal QLD,Black Coal
+Generator.Fuels,TARONG#2,Tarong,Black Coal QLD,Black Coal
+Generator.Fuels,TARONG#3,Tarong,Black Coal QLD,Black Coal
+Generator.Fuels,TARONG#4,Tarong,Black Coal QLD,Black Coal
+Generator.Fuels,TNPS1,Tarong,Black Coal QLD,Black Coal
+Generator.Fuels,LOYYB1,Loy Yang B,Brown Coal VIC,Brown Coal
+Generator.Fuels,LOYYB2,Loy Yang B,Brown Coal VIC,Brown Coal
+Generator.Fuels,LYA1,Loy Yang A,Brown Coal VIC,Brown Coal
+Generator.Fuels,LYA2,Loy Yang A,Brown Coal VIC,Brown Coal
+Generator.Fuels,LYA3,Loy Yang A,Brown Coal VIC,Brown Coal
+Generator.Fuels,LYA4,Loy Yang A,Brown Coal VIC,Brown Coal
+Generator.Fuels,YWPS1,Yallourn,Brown Coal VIC,Brown Coal
+Generator.Fuels,YWPS2,Yallourn,Brown Coal VIC,Brown Coal
+Generator.Fuels,YWPS3,Yallourn,Brown Coal VIC,Brown Coal
+Generator.Fuels,YWPS4,Yallourn,Brown Coal VIC,Brown Coal
+Generator.Fuels,CG1,Colongra,Natural Gas NSW,Natural Gas
+Generator.Fuels,CG1,Backup Diesel Colangra,Natural Gas NSW,Liquid Fuel
+Generator.Fuels,CG2,Colongra,Natural Gas NSW,Natural Gas
+Generator.Fuels,CG2,Backup Diesel Colangra,Natural Gas NSW,Liquid Fuel
+Generator.Fuels,CG3,Colongra,Natural Gas NSW,Natural Gas
+Generator.Fuels,CG3,Backup Diesel Colangra,Natural Gas NSW,Liquid Fuel
+Generator.Fuels,CG4,Colongra,Natural Gas NSW,Natural Gas
+Generator.Fuels,CG4,Backup Diesel Colangra,Natural Gas NSW,Liquid Fuel
+Generator.Fuels,Dubbo Firming Power Station,Hunter,Natural Gas NSW,Natural Gas
+Generator.Fuels,Dubbo Firming Power Station,Backup Diesel Hunter Power Station,Natural Gas NSW,Liquid Fuel
+Generator.Fuels,HUNTER1,Hunter,Natural Gas NSW,Natural Gas
+Generator.Fuels,HUNTER1,Backup Diesel Hunter Power Station,Natural Gas NSW,Liquid Fuel
+Generator.Fuels,HUNTER2,Hunter,Natural Gas NSW,Natural Gas
+Generator.Fuels,HUNTER2,Backup Diesel Hunter Power Station,Natural Gas NSW,Liquid Fuel
+Generator.Fuels,SITHE01,Smithfield,Natural Gas NSW,Natural Gas
+Generator.Fuels,SITHE02,Smithfield,Natural Gas NSW,Natural Gas
+Generator.Fuels,SITHE03,Smithfield,Natural Gas NSW,Natural Gas
+Generator.Fuels,SITHE04,Smithfield,Natural Gas NSW,Natural Gas
+Generator.Fuels,TALWA1,Tallawarra,Natural Gas NSW,Natural Gas
+Generator.Fuels,TALWB1,Tallawarra B,Natural Gas NSW,Natural Gas
+Generator.Fuels,URANQ11,Uranquinty,Natural Gas NSW,Natural Gas
+Generator.Fuels,URANQ12,Uranquinty,Natural Gas NSW,Natural Gas
+Generator.Fuels,URANQ13,Uranquinty,Natural Gas NSW,Natural Gas
+Generator.Fuels,URANQ14,Uranquinty,Natural Gas NSW,Natural Gas
+Generator.Fuels,BARCALDN,Barcaldine,Natural Gas QLD,Natural Gas
+Generator.Fuels,BRAEMAR1,Braemar,Natural Gas QLD,Natural Gas
+Generator.Fuels,BRAEMAR2,Braemar,Natural Gas QLD,Natural Gas
+Generator.Fuels,BRAEMAR3,Braemar,Natural Gas QLD,Natural Gas
+Generator.Fuels,BRAEMAR5,Braemar 2,Natural Gas QLD,Natural Gas
+Generator.Fuels,BRAEMAR6,Braemar 2,Natural Gas QLD,Natural Gas
+Generator.Fuels,BRAEMAR7,Braemar 2,Natural Gas QLD,Natural Gas
+Generator.Fuels,Brigalow GT (Kogan Creek GT),Brigalow GT (Kogan Creek GT),Natural Gas QLD,Natural Gas
+Generator.Fuels,CPSA_GT1,Condamine,Natural Gas QLD,Natural Gas
+Generator.Fuels,CPSA_GT2,Condamine,Natural Gas QLD,Natural Gas
+Generator.Fuels,CPSA_ST,Condamine,Natural Gas QLD,Natural Gas
+Generator.Fuels,DDPS1_GT1,Darling Downs,Natural Gas QLD,Natural Gas
+Generator.Fuels,DDPS1_GT2,Darling Downs,Natural Gas QLD,Natural Gas
+Generator.Fuels,DDPS1_GT3,Darling Downs,Natural Gas QLD,Natural Gas
+Generator.Fuels,DDPS1_ST,Darling Downs,Natural Gas QLD,Natural Gas
+Generator.Fuels,Lockyer Valley Energy Project A,Lockyer Valley GT,Natural Gas QLD,Natural Gas
+Generator.Fuels,Lockyer Valley Energy Project B,Lockyer Valley GT,Natural Gas QLD,Natural Gas
+Generator.Fuels,OAKEY1,Oakey,Natural Gas QLD,Natural Gas
+Generator.Fuels,OAKEY1,Backup Diesel Oakey,Natural Gas QLD,Liquid Fuel
+Generator.Fuels,OAKEY2,Oakey,Natural Gas QLD,Natural Gas
+Generator.Fuels,OAKEY2,Backup Diesel Oakey,Natural Gas QLD,Liquid Fuel
+Generator.Fuels,ROMA_7,Roma,Natural Gas QLD,Natural Gas
+Generator.Fuels,ROMA_8,Roma,Natural Gas QLD,Natural Gas
+Generator.Fuels,SWAN_E,Swanbank E,Natural Gas QLD,Natural Gas
+Generator.Fuels,YABULU,Townsville,Natural Gas QLD,Natural Gas
+Generator.Fuels,YABULU2,Townsville,Natural Gas QLD,Natural Gas
+Generator.Fuels,YARWUN_1,Yarwun,Natural Gas QLD,Natural Gas
+Generator.Fuels,AGLHAL01,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL01,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL02,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL02,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL03,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL03,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL04,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL04,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL05,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL05,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL06,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL06,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL07,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL07,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL08,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL08,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL09,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL09,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL10,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL10,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL11,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL11,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL12,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL12,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,AGLHAL13,Hallett,Natural Gas SA,Natural Gas
+Generator.Fuels,AGLHAL13,Backup Diesel Hallett,Natural Gas SA,Liquid Fuel
+Generator.Fuels,BARKIPS1,Barker Inlet,Natural Gas SA,Natural Gas
+Generator.Fuels,BARKIPS1,Backup Diesel Barker Inlet,Natural Gas SA,Liquid Fuel
+Generator.Fuels,BOLIVPS1,Bolivar Power Station,Natural Gas SA,Natural Gas
+Generator.Fuels,BOLIVPS1,Backup Diesel Bolivar,Natural Gas SA,Liquid Fuel
+Generator.Fuels,DRYCGT1,Dry Creek,Natural Gas SA,Natural Gas
+Generator.Fuels,DRYCGT2,Dry Creek,Natural Gas SA,Natural Gas
+Generator.Fuels,DRYCGT3,Dry Creek,Natural Gas SA,Natural Gas
+Generator.Fuels,LADBROK1,Ladbroke Grove,Natural Gas SA,Natural Gas
+Generator.Fuels,LADBROK2,Ladbroke Grove,Natural Gas SA,Natural Gas
+Generator.Fuels,MINTARO,Mintaro,Natural Gas SA,Natural Gas
+Generator.Fuels,New Gas SA 1,SA new OCGT,Natural Gas SA,Natural Gas
+Generator.Fuels,New Gas SA 2,SA new OCGT,Natural Gas SA,Natural Gas
+Generator.Fuels,OsborneGT,Osborne,Natural Gas SA,Natural Gas
+Generator.Fuels,OsborneST,Osborne,Natural Gas SA,Natural Gas
+Generator.Fuels,PPCCGTGT1,Pelican Point,Natural Gas SA,Natural Gas
+Generator.Fuels,PPCCGTGT2,Pelican Point,Natural Gas SA,Natural Gas
+Generator.Fuels,PPCCGTST,Pelican Point,Natural Gas SA,Natural Gas
+Generator.Fuels,QPS1,Quarantine,Natural Gas SA,Natural Gas
+Generator.Fuels,QPS2,Quarantine,Natural Gas SA,Natural Gas
+Generator.Fuels,QPS3,Quarantine,Natural Gas SA,Natural Gas
+Generator.Fuels,QPS4,Quarantine,Natural Gas SA,Natural Gas
+Generator.Fuels,QPS5,Quarantine,Natural Gas SA,Natural Gas
+Generator.Fuels,SNAPPER1,SA new OCGT,Natural Gas SA,Natural Gas
+Generator.Fuels,SNAPPER1,Backup Diesel Snapper,Natural Gas SA,Liquid Fuel
+Generator.Fuels,TORRB1,Torrens Island,Natural Gas SA,Natural Gas
+Generator.Fuels,TORRB2,Torrens Island,Natural Gas SA,Natural Gas
+Generator.Fuels,TORRB3,Torrens Island,Natural Gas SA,Natural Gas
+Generator.Fuels,TORRB4,Torrens Island,Natural Gas SA,Natural Gas
+Generator.Fuels,BBTHREE1,Tamar Valley OCGT,Natural Gas TAS,Natural Gas
+Generator.Fuels,BBTHREE2,Tamar Valley OCGT,Natural Gas TAS,Natural Gas
+Generator.Fuels,BBTHREE3,Tamar Valley OCGT,Natural Gas TAS,Natural Gas
+Generator.Fuels,TVCC201_GT,Tamar Valley CCGT,Natural Gas TAS,Natural Gas
+Generator.Fuels,TVCC201_ST,Tamar Valley CCGT,Natural Gas TAS,Natural Gas
+Generator.Fuels,TVPP104,Tamar Valley OCGT,Natural Gas TAS,Natural Gas
+Generator.Fuels,AGLSOM01,Somerton,Natural Gas VIC,Natural Gas
+Generator.Fuels,AGLSOM02,Somerton,Natural Gas VIC,Natural Gas
+Generator.Fuels,AGLSOM03,Somerton,Natural Gas VIC,Natural Gas
+Generator.Fuels,AGLSOM04,Somerton,Natural Gas VIC,Natural Gas
+Generator.Fuels,BDL01,Bairnsdale,Natural Gas VIC,Natural Gas
+Generator.Fuels,BDL02,Bairnsdale,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLA01,Jeeralang,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLA01,Backup Diesel Jeeralang,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,JLA02,Jeeralang,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLA02,Backup Diesel Jeeralang,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,JLA03,Jeeralang,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLA03,Backup Diesel Jeeralang,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,JLA04,Jeeralang,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLA04,Backup Diesel Jeeralang,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,JLB01,Jeeralang,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLB01,Backup Diesel Jeeralang,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,JLB02,Jeeralang,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLB02,Backup Diesel Jeeralang,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,JLB03,Jeeralang,Natural Gas VIC,Natural Gas
+Generator.Fuels,JLB03,Backup Diesel Jeeralang,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,LNGS1,Laverton North,Natural Gas VIC,Natural Gas
+Generator.Fuels,LNGS1,Backup Diesel Laverton North,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,LNGS2,Laverton North,Natural Gas VIC,Natural Gas
+Generator.Fuels,LNGS2,Backup Diesel Laverton North,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,MORTLK11,Mortlake OCGT,Natural Gas VIC,Natural Gas
+Generator.Fuels,MORTLK12,Mortlake OCGT,Natural Gas VIC,Natural Gas
+Generator.Fuels,NPS,Newport,Natural Gas VIC,Natural Gas
+Generator.Fuels,NPS,Backup Diesel Newport,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,VPGS1,Valley Power,Natural Gas VIC,Natural Gas
+Generator.Fuels,VPGS1,Backup Diesel Valley Power,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,VPGS2,Valley Power,Natural Gas VIC,Natural Gas
+Generator.Fuels,VPGS2,Backup Diesel Valley Power,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,VPGS3,Valley Power,Natural Gas VIC,Natural Gas
+Generator.Fuels,VPGS3,Backup Diesel Valley Power,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,VPGS4,Valley Power,Natural Gas VIC,Natural Gas
+Generator.Fuels,VPGS4,Backup Diesel Valley Power,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,VPGS5,Valley Power,Natural Gas VIC,Natural Gas
+Generator.Fuels,VPGS5,Backup Diesel Valley Power,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,VPGS6,Valley Power,Natural Gas VIC,Natural Gas
+Generator.Fuels,VPGS6,Backup Diesel Valley Power,Natural Gas VIC,Liquid Fuel
+Generator.Fuels,HEZ1,Hunter Economic Zone,Liquid Fuel NSW,Liquid Fuel
+Generator.Fuels,MSTUART1,Mt Stuart,Liquid Fuel QLD,Liquid Fuel
+Generator.Fuels,MSTUART2,Mt Stuart,Liquid Fuel QLD,Liquid Fuel
+Generator.Fuels,MSTUART3,Mt Stuart,Liquid Fuel QLD,Liquid Fuel
+Generator.Fuels,ANGAS1,Angaston,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,ANGAS2,Angaston,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,LONSDALE,Lonsdale,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,POR01-1,Port Lincoln,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,POR01-2,Port Lincoln,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,POR01-3,Port Lincoln,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,PTSTAN1_1,Port Stanvac 1,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,PTSTAN1_2,Port Stanvac 1,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,SNUG1,Snuggery,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,SNUG2,Snuggery,Liquid Fuel SA,Liquid Fuel
+Generator.Fuels,SNUG3,Snuggery,Liquid Fuel SA,Liquid Fuel
+Emission.Fuels,Comb Co2,Bayswater,-,Black Coal
+Emission.Fuels,Comb Co2,Callide B & C,-,Black Coal
+Emission.Fuels,Comb Co2,Eraring Energy,-,Black Coal
+Emission.Fuels,Comb Co2,Gladstone,-,Black Coal
+Emission.Fuels,Comb Co2,Kogan Creek,-,Black Coal
+Emission.Fuels,Comb Co2,Millmerran,-,Black Coal
+Emission.Fuels,Comb Co2,Mt Piper,-,Black Coal
+Emission.Fuels,Comb Co2,Stanwell,-,Black Coal
+Emission.Fuels,Comb Co2,Tarong,-,Black Coal
+Emission.Fuels,Comb Co2,Vales Point B,-,Black Coal
+Emission.Fuels,Comb Co2,Loy Yang A,-,Brown Coal
+Emission.Fuels,Comb Co2,Loy Yang B,-,Brown Coal
+Emission.Fuels,Comb Co2,Yallourn,-,Brown Coal
+Emission.Fuels,Comb Co2,Bairnsdale,-,Natural Gas
+Emission.Fuels,Comb Co2,Barcaldine,-,Natural Gas
+Emission.Fuels,Comb Co2,Braemar,-,Natural Gas
+Emission.Fuels,Comb Co2,Braemar 2,-,Natural Gas
+Emission.Fuels,Comb Co2,Colongra,-,Natural Gas
+Emission.Fuels,Comb Co2,Condamine,-,Natural Gas
+Emission.Fuels,Comb Co2,Darling Downs,-,Natural Gas
+Emission.Fuels,Comb Co2,Dry Creek,-,Natural Gas
+Emission.Fuels,Comb Co2,Hallett,-,Natural Gas
+Emission.Fuels,Comb Co2,Jeeralang,-,Natural Gas
+Emission.Fuels,Comb Co2,Ladbroke Grove,-,Natural Gas
+Emission.Fuels,Comb Co2,Laverton North,-,Natural Gas
+Emission.Fuels,Comb Co2,Mintaro,-,Natural Gas
+Emission.Fuels,Comb Co2,Mortlake OCGT,-,Natural Gas
+Emission.Fuels,Comb Co2,Newport,-,Natural Gas
+Emission.Fuels,Comb Co2,Oakey,-,Natural Gas
+Emission.Fuels,Comb Co2,Osborne,-,Natural Gas
+Emission.Fuels,Comb Co2,Pelican Point,-,Natural Gas
+Emission.Fuels,Comb Co2,Quarantine,-,Natural Gas
+Emission.Fuels,Comb Co2,Roma,-,Natural Gas
+Emission.Fuels,Comb Co2,SA new OCGT,-,Natural Gas
+Emission.Fuels,Comb Co2,Smithfield,-,Natural Gas
+Emission.Fuels,Comb Co2,Somerton,-,Natural Gas
+Emission.Fuels,Comb Co2,Swanbank E,-,Natural Gas
+Emission.Fuels,Comb Co2,Tallawarra,-,Natural Gas
+Emission.Fuels,Comb Co2,Tallawarra B,-,Natural Gas
+Emission.Fuels,Comb Co2,Torrens Island,-,Natural Gas
+Emission.Fuels,Comb Co2,Townsville,-,Natural Gas
+Emission.Fuels,Comb Co2,Uranquinty,-,Natural Gas
+Emission.Fuels,Comb Co2,Valley Power,-,Natural Gas
+Emission.Fuels,Comb Co2,Yarwun,-,Natural Gas
+Emission.Fuels,Fugi Co2,Bayswater,-,Black Coal
+Emission.Fuels,Fugi Co2,Callide B & C,-,Black Coal
+Emission.Fuels,Fugi Co2,Eraring Energy,-,Black Coal
+Emission.Fuels,Fugi Co2,Gladstone,-,Black Coal
+Emission.Fuels,Fugi Co2,Kogan Creek,-,Black Coal
+Emission.Fuels,Fugi Co2,Millmerran,-,Black Coal
+Emission.Fuels,Fugi Co2,Mt Piper,-,Black Coal
+Emission.Fuels,Fugi Co2,Stanwell,-,Black Coal
+Emission.Fuels,Fugi Co2,Tarong,-,Black Coal
+Emission.Fuels,Fugi Co2,Vales Point B,-,Black Coal
+Emission.Fuels,Fugi Co2,Loy Yang A,-,Brown Coal
+Emission.Fuels,Fugi Co2,Loy Yang B,-,Brown Coal
+Emission.Fuels,Fugi Co2,Yallourn,-,Brown Coal
+Emission.Fuels,Fugi Co2,Bairnsdale,-,Natural Gas
+Emission.Fuels,Fugi Co2,Barcaldine,-,Natural Gas
+Emission.Fuels,Fugi Co2,Braemar,-,Natural Gas
+Emission.Fuels,Fugi Co2,Braemar 2,-,Natural Gas
+Emission.Fuels,Fugi Co2,Colongra,-,Natural Gas
+Emission.Fuels,Fugi Co2,Condamine,-,Natural Gas
+Emission.Fuels,Fugi Co2,Darling Downs,-,Natural Gas
+Emission.Fuels,Fugi Co2,Dry Creek,-,Natural Gas
+Emission.Fuels,Fugi Co2,Hallett,-,Natural Gas
+Emission.Fuels,Fugi Co2,Jeeralang,-,Natural Gas
+Emission.Fuels,Fugi Co2,Ladbroke Grove,-,Natural Gas
+Emission.Fuels,Fugi Co2,Laverton North,-,Natural Gas
+Emission.Fuels,Fugi Co2,Mintaro,-,Natural Gas
+Emission.Fuels,Fugi Co2,Mortlake OCGT,-,Natural Gas
+Emission.Fuels,Fugi Co2,Newport,-,Natural Gas
+Emission.Fuels,Fugi Co2,Oakey,-,Natural Gas
+Emission.Fuels,Fugi Co2,Osborne,-,Natural Gas
+Emission.Fuels,Fugi Co2,Pelican Point,-,Natural Gas
+Emission.Fuels,Fugi Co2,Quarantine,-,Natural Gas
+Emission.Fuels,Fugi Co2,Roma,-,Natural Gas
+Emission.Fuels,Fugi Co2,SA new OCGT,-,Natural Gas
+Emission.Fuels,Fugi Co2,Smithfield,-,Natural Gas
+Emission.Fuels,Fugi Co2,Somerton,-,Natural Gas
+Emission.Fuels,Fugi Co2,Swanbank E,-,Natural Gas
+Emission.Fuels,Fugi Co2,Tallawarra,-,Natural Gas
+Emission.Fuels,Fugi Co2,Tallawarra B,-,Natural Gas
+Emission.Fuels,Fugi Co2,Torrens Island,-,Natural Gas
+Emission.Fuels,Fugi Co2,Townsville,-,Natural Gas
+Emission.Fuels,Fugi Co2,Uranquinty,-,Natural Gas
+Emission.Fuels,Fugi Co2,Valley Power,-,Natural Gas
+Emission.Fuels,Fugi Co2,Yarwun,-,Natural Gas

@@ -1,0 +1,677 @@
+﻿Class,Name,Category,Description
+Generator,NSW1_DSP,Reliability DSPs,Energy constrained DSP component
+Generator,QLD1_DSP,Reliability DSPs,Energy constrained DSP component
+Generator,SA1_DSP,Reliability DSPs,Energy constrained DSP component
+Generator,TAS1_DSP,Reliability DSPs,Energy constrained DSP component
+Generator,VIC1_DSP,Reliability DSPs,Energy constrained DSP component
+Generator,Virtual Power Plant,Reliability DSPs,
+Generator,BW01,Black Coal NSW,101401
+Generator,BW02,Black Coal NSW,101402
+Generator,BW03,Black Coal NSW,101403
+Generator,BW04,Black Coal NSW,101404
+Generator,ER01,Black Coal NSW,107401
+Generator,ER02,Black Coal NSW,107402
+Generator,ER03,Black Coal NSW,107403
+Generator,ER04,Black Coal NSW,107404
+Generator,MP1,Black Coal NSW,114403
+Generator,MP2,Black Coal NSW,114404
+Generator,VP5,Black Coal NSW,121901
+Generator,VP6,Black Coal NSW,121902
+Generator,CALL_B_1,Black Coal QLD,103501
+Generator,CALL_B_2,Black Coal QLD,103502
+Generator,CPP_3,Black Coal QLD,103601
+Generator,CPP_4,Black Coal QLD,103604
+Generator,GSTONE1,Black Coal QLD,107701
+Generator,GSTONE2,Black Coal QLD,107702
+Generator,GSTONE3,Black Coal QLD,107703
+Generator,GSTONE4,Black Coal QLD,107704
+Generator,GSTONE5,Black Coal QLD,107705
+Generator,GSTONE6,Black Coal QLD,107706
+Generator,KPP_1,Black Coal QLD,110401
+Generator,MPP_1,Black Coal QLD,113401
+Generator,MPP_2,Black Coal QLD,113402
+Generator,STAN-1,Black Coal QLD,118501
+Generator,STAN-2,Black Coal QLD,118502
+Generator,STAN-3,Black Coal QLD,118503
+Generator,STAN-4,Black Coal QLD,118504
+Generator,TARONG#1,Black Coal QLD,119701
+Generator,TARONG#2,Black Coal QLD,119702
+Generator,TARONG#3,Black Coal QLD,119703
+Generator,TARONG#4,Black Coal QLD,119704
+Generator,TNPS1,Black Coal QLD,119901
+Generator,LOYYB1,Brown Coal VIC,112501
+Generator,LOYYB2,Brown Coal VIC,112502
+Generator,LYA1,Brown Coal VIC,112401
+Generator,LYA2,Brown Coal VIC,112402
+Generator,LYA3,Brown Coal VIC,112403
+Generator,LYA4,Brown Coal VIC,112404
+Generator,YWPS1,Brown Coal VIC,124701
+Generator,YWPS2,Brown Coal VIC,124702
+Generator,YWPS3,Brown Coal VIC,124703
+Generator,YWPS4,Brown Coal VIC,124704
+Generator,BLOWERNG,Hydro NSW,102101
+Generator,GUTHEGA1,Hydro NSW,108301
+Generator,GUTHEGA2,Hydro NSW,108302
+Generator,HUMENSW,Hydro NSW,173201
+Generator,Lake Lyell Pumped Hydro 1,Hydro NSW,203302
+Generator,Lake Lyell Pumped Hydro 2,Hydro NSW,203303
+Generator,Phoenix Pumped Hydro Project,Hydro NSW,253401
+Generator,SHGEN01,Hydro NSW,117701
+Generator,SHGEN02,Hydro NSW,117702
+Generator,SHGEN03,Hydro NSW,117703
+Generator,SHGEN04,Hydro NSW,117704
+Generator,SNO2PH01,Hydro NSW,175201
+Generator,SNO2PH02,Hydro NSW,175202
+Generator,SNO2PH03,Hydro NSW,175203
+Generator,SNO2PH04,Hydro NSW,175204
+Generator,SNO2PH05,Hydro NSW,175205
+Generator,SNO2PH06,Hydro NSW,175206
+Generator,TUMUT1_01,Hydro NSW,121701
+Generator,TUMUT1_02,Hydro NSW,121702
+Generator,TUMUT1_03,Hydro NSW,121703
+Generator,TUMUT1_04,Hydro NSW,121704
+Generator,TUMUT2_01,Hydro NSW,121705
+Generator,TUMUT2_02,Hydro NSW,121706
+Generator,TUMUT2_03,Hydro NSW,121707
+Generator,TUMUT2_04,Hydro NSW,121708
+Generator,TUMUT3_01,Hydro NSW,121501
+Generator,TUMUT3_02,Hydro NSW,121502
+Generator,TUMUT3_03,Hydro NSW,121503
+Generator,TUMUT3_04,Hydro NSW,121504
+Generator,TUMUT3_05,Hydro NSW,121505
+Generator,TUMUT3_06,Hydro NSW,121506
+Generator,BARRON-1,Hydro QLD,101201
+Generator,BARRON-2,Hydro QLD,101202
+Generator,Borumba,Hydro QLD,192102
+Generator,Capricornia Energy Hub (CEH) PHES,Hydro QLD,259301
+Generator,Cressbrook Pumped Hydro Project,Hydro QLD,196801
+Generator,KAREEYA1,Hydro QLD,110001
+Generator,KAREEYA2,Hydro QLD,110002
+Generator,KAREEYA3,Hydro QLD,110003
+Generator,KAREEYA4,Hydro QLD,110004
+Generator,KIDSPHG1,Hydro QLD,135202
+Generator,KIDSPHG2,Hydro QLD,135203
+Generator,Mt Rawdon Pumped Hydro,Hydro QLD,227401
+Generator,W/HOE#1,Hydro QLD,123501
+Generator,W/HOE#2,Hydro QLD,123502
+Generator,BASTYAN,Hydro TAS,101301
+Generator,CA111-1,Hydro TAS,104101
+Generator,CA112-2,Hydro TAS,104102
+Generator,CETHANA,Hydro TAS,104301
+Generator,DEVILS_G,Hydro TAS,106901
+Generator,FISHER,Hydro TAS,107601
+Generator,GO181-1,Hydro TAS,108101
+Generator,GO182-2,Hydro TAS,108102
+Generator,GO183-3,Hydro TAS,108103
+Generator,JBUTTERS,Hydro TAS,109701
+Generator,LI111-1,Hydro TAS,104103
+Generator,LI112-2,Hydro TAS,104104
+Generator,LI113-3,Hydro TAS,104105
+Generator,LK_ECHO,Hydro TAS,111101
+Generator,LM111-1,Hydro TAS,111601
+Generator,MACKNTSH,Hydro TAS,113001
+Generator,MEADOWBK,Hydro TAS,113301
+Generator,PO161-1,Hydro TAS,116206
+Generator,PO162-2,Hydro TAS,116201
+Generator,PO163-3,Hydro TAS,116202
+Generator,PO164-4,Hydro TAS,116203
+Generator,PO165-5,Hydro TAS,116204
+Generator,PO166-6,Hydro TAS,116205
+Generator,REECE1,Hydro TAS,116801
+Generator,REECE2,Hydro TAS,116802
+Generator,TA111-1,Hydro TAS,120001
+Generator,TA111-2,Hydro TAS,120002
+Generator,TA111-3,Hydro TAS,120003
+Generator,TA112-4,Hydro TAS,120004
+Generator,TA112-5,Hydro TAS,120005
+Generator,TA112-6,Hydro TAS,120006
+Generator,TR111-1,Hydro TAS,121301
+Generator,TR111-2,Hydro TAS,121302
+Generator,TR112-3,Hydro TAS,121303
+Generator,TR112-4,Hydro TAS,121304
+Generator,TRIBUTE,Hydro TAS,121401
+Generator,TU111-1,Hydro TAS,121601
+Generator,TU112-2,Hydro TAS,121602
+Generator,TU113-3,Hydro TAS,121603
+Generator,TU114-4,Hydro TAS,121604
+Generator,TU115-5,Hydro TAS,121605
+Generator,WI111-1,Hydro TAS,111602
+Generator,WY111-1,Hydro TAS,104106
+Generator,WY111-2,Hydro TAS,104107
+Generator,WY111-3,Hydro TAS,104108
+Generator,BOGONG1,Hydro VIC,102303
+Generator,BOGONG2,Hydro VIC,102304
+Generator,DARTM1,Hydro VIC,106801
+Generator,EILDON1,Hydro VIC,"107,201,107,202"
+Generator,EILDON2,Hydro VIC,"107,203,107,204"
+Generator,HUMEV,Hydro VIC,173601
+Generator,MCKAY11,Hydro VIC,102305
+Generator,MCKAY12,Hydro VIC,102306
+Generator,MCKAY13,Hydro VIC,102307
+Generator,MCKAY14,Hydro VIC,102308
+Generator,MCKAY15,Hydro VIC,102309
+Generator,MCKAY16,Hydro VIC,102310
+Generator,MURRAY01,Hydro VIC,114701
+Generator,MURRAY02,Hydro VIC,114702
+Generator,MURRAY03,Hydro VIC,114703
+Generator,MURRAY04,Hydro VIC,114704
+Generator,MURRAY05,Hydro VIC,114705
+Generator,MURRAY06,Hydro VIC,114706
+Generator,MURRAY07,Hydro VIC,114707
+Generator,MURRAY08,Hydro VIC,114708
+Generator,MURRAY09,Hydro VIC,114709
+Generator,MURRAY10,Hydro VIC,114710
+Generator,MURRAY11,Hydro VIC,114801
+Generator,MURRAY12,Hydro VIC,114802
+Generator,MURRAY13,Hydro VIC,114803
+Generator,MURRAY14,Hydro VIC,114804
+Generator,WKIEWA1_1,Hydro VIC,122703
+Generator,WKIEWA1_2,Hydro VIC,122704
+Generator,WKIEWA2_1,Hydro VIC,122705
+Generator,WKIEWA2_2,Hydro VIC,122706
+Generator,CG1,Natural Gas NSW,105301
+Generator,CG2,Natural Gas NSW,105302
+Generator,CG3,Natural Gas NSW,105303
+Generator,CG4,Natural Gas NSW,105304
+Generator,Dubbo Firming Power Station,Natural Gas NSW,257901
+Generator,HUNTER1,Natural Gas NSW,187101
+Generator,HUNTER2,Natural Gas NSW,187102
+Generator,SITHE01,Natural Gas NSW,117901
+Generator,SITHE02,Natural Gas NSW,117902
+Generator,SITHE03,Natural Gas NSW,117903
+Generator,SITHE04,Natural Gas NSW,
+Generator,TALWA1,Natural Gas NSW,119201
+Generator,TALWB1,Natural Gas NSW,119301
+Generator,URANQ11,Natural Gas NSW,121801
+Generator,URANQ12,Natural Gas NSW,121802
+Generator,URANQ13,Natural Gas NSW,121803
+Generator,URANQ14,Natural Gas NSW,121804
+Generator,BARCALDN,Natural Gas QLD,101001
+Generator,BRAEMAR1,Natural Gas QLD,102601
+Generator,BRAEMAR2,Natural Gas QLD,102602
+Generator,BRAEMAR3,Natural Gas QLD,102603
+Generator,BRAEMAR5,Natural Gas QLD,102701
+Generator,BRAEMAR6,Natural Gas QLD,102702
+Generator,BRAEMAR7,Natural Gas QLD,102703
+Generator,Brigalow GT (Kogan Creek GT),Natural Gas QLD,256801
+Generator,CPSA_GT1,Natural Gas QLD,105401
+Generator,CPSA_GT2,Natural Gas QLD,105402
+Generator,CPSA_ST,Natural Gas QLD,105403
+Generator,DDPS1_GT1,Natural Gas QLD,106602
+Generator,DDPS1_GT2,Natural Gas QLD,106603
+Generator,DDPS1_GT3,Natural Gas QLD,106604
+Generator,DDPS1_ST,Natural Gas QLD,106601
+Generator,Lockyer Valley Energy Project A,Natural Gas QLD,161409
+Generator,Lockyer Valley Energy Project B,Natural Gas QLD,161410
+Generator,OAKEY1,Natural Gas QLD,143301
+Generator,OAKEY2,Natural Gas QLD,143302
+Generator,ROMA_7,Natural Gas QLD,117301
+Generator,ROMA_8,Natural Gas QLD,117302
+Generator,SWAN_E,Natural Gas QLD,119001
+Generator,YABULU,Natural Gas QLD,172401
+Generator,YABULU2,Natural Gas QLD,172402
+Generator,YARWUN_1,Natural Gas QLD,125701
+Generator,AGLHAL01,Natural Gas SA,108601
+Generator,AGLHAL02,Natural Gas SA,108602
+Generator,AGLHAL03,Natural Gas SA,108603
+Generator,AGLHAL04,Natural Gas SA,108604
+Generator,AGLHAL05,Natural Gas SA,108605
+Generator,AGLHAL06,Natural Gas SA,108606
+Generator,AGLHAL07,Natural Gas SA,108607
+Generator,AGLHAL08,Natural Gas SA,108608
+Generator,AGLHAL09,Natural Gas SA,108609
+Generator,AGLHAL10,Natural Gas SA,108610
+Generator,AGLHAL11,Natural Gas SA,108611
+Generator,AGLHAL12,Natural Gas SA,108612
+Generator,AGLHAL13,Natural Gas SA,108613
+Generator,BARKIPS1,Natural Gas SA,146301
+Generator,BOLIVPS1,Natural Gas SA,"153,302,153,303,153,000,000,000"
+Generator,DRYCGT1,Natural Gas SA,107001
+Generator,DRYCGT2,Natural Gas SA,107002
+Generator,DRYCGT3,Natural Gas SA,107003
+Generator,LADBROK1,Natural Gas SA,110701
+Generator,LADBROK2,Natural Gas SA,110702
+Generator,MINTARO,Natural Gas SA,113501
+Generator,New Gas SA 1,Natural Gas SA,Generic Regional Object
+Generator,New Gas SA 2,Natural Gas SA,Generic Regional Object
+Generator,OsborneGT,Natural Gas SA,115401
+Generator,OsborneST,Natural Gas SA,115402
+Generator,PPCCGTGT1,Natural Gas SA,115801
+Generator,PPCCGTGT2,Natural Gas SA,115802
+Generator,PPCCGTST,Natural Gas SA,115803
+Generator,QPS1,Natural Gas SA,116602
+Generator,QPS2,Natural Gas SA,116603
+Generator,QPS3,Natural Gas SA,116604
+Generator,QPS4,Natural Gas SA,116605
+Generator,QPS5,Natural Gas SA,116606
+Generator,SNAPPER1,Natural Gas SA,"153,201,153,203,153,000,000,000,000,000"
+Generator,TORRB1,Natural Gas SA,121001
+Generator,TORRB2,Natural Gas SA,121002
+Generator,TORRB3,Natural Gas SA,121003
+Generator,TORRB4,Natural Gas SA,121004
+Generator,BBTHREE1,Natural Gas TAS,101501
+Generator,BBTHREE2,Natural Gas TAS,101502
+Generator,BBTHREE3,Natural Gas TAS,101503
+Generator,TVCC201_GT,Natural Gas TAS,119401
+Generator,TVCC201_ST,Natural Gas TAS,119402
+Generator,TVPP104,Natural Gas TAS,119501
+Generator,AGLSOM01,Natural Gas VIC,118301
+Generator,AGLSOM02,Natural Gas VIC,118302
+Generator,AGLSOM03,Natural Gas VIC,118303
+Generator,AGLSOM04,Natural Gas VIC,118304
+Generator,BDL01,Natural Gas VIC,100501
+Generator,BDL02,Natural Gas VIC,100502
+Generator,JLA01,Natural Gas VIC,137301
+Generator,JLA02,Natural Gas VIC,137302
+Generator,JLA03,Natural Gas VIC,137303
+Generator,JLA04,Natural Gas VIC,137304
+Generator,JLB01,Natural Gas VIC,137401
+Generator,JLB02,Natural Gas VIC,137402
+Generator,JLB03,Natural Gas VIC,137403
+Generator,LNGS1,Natural Gas VIC,111501
+Generator,LNGS2,Natural Gas VIC,111502
+Generator,MORTLK11,Natural Gas VIC,113905
+Generator,MORTLK12,Natural Gas VIC,113906
+Generator,NPS,Natural Gas VIC,115001
+Generator,VPGS1,Natural Gas VIC,122001
+Generator,VPGS2,Natural Gas VIC,122002
+Generator,VPGS3,Natural Gas VIC,122003
+Generator,VPGS4,Natural Gas VIC,122004
+Generator,VPGS5,Natural Gas VIC,122005
+Generator,VPGS6,Natural Gas VIC,122006
+Generator,HEZ1,Liquid Fuel NSW,160101
+Generator,MSTUART1,Liquid Fuel QLD,114501
+Generator,MSTUART2,Liquid Fuel QLD,114502
+Generator,MSTUART3,Liquid Fuel QLD,114503
+Generator,ANGAS1,Liquid Fuel SA,100201
+Generator,ANGAS2,Liquid Fuel SA,100202
+Generator,LONSDALE,Liquid Fuel SA,112201
+Generator,POR01-1,Liquid Fuel SA,116301
+Generator,POR01-2,Liquid Fuel SA,116302
+Generator,POR01-3,Liquid Fuel SA,116303
+Generator,PTSTAN1_1,Liquid Fuel SA,139101
+Generator,PTSTAN1_2,Liquid Fuel SA,139102
+Generator,SNUG1,Liquid Fuel SA,118201
+Generator,SNUG2,Liquid Fuel SA,118202
+Generator,SNUG3,Liquid Fuel SA,118203
+Generator,BANGOWF1,Wind NSW,128201
+Generator,BANGOWF2,Wind NSW,184302
+Generator,BOCORWF1,Wind NSW,"102,201,102,202"
+Generator,BODWF1,Wind NSW,125901
+Generator,CAPTL_WF,Wind NSW,103801
+Generator,COLWF01,Wind NSW,105201
+Generator,CROOKWF2,Wind NSW,106101
+Generator,CROOKWF3,Wind NSW,106201
+Generator,CRURWF1,Wind NSW,128101
+Generator,CULLRGWF,Wind NSW,106401
+Generator,FLYCRKWF,Wind NSW,126801
+Generator,GULLRWF1,Wind NSW,"142,201,142,202"
+Generator,GULLRWF2,Wind NSW,158802
+Generator,GUNNING1,Wind NSW,"108,201,108,202"
+Generator,RYEPARK1,Wind NSW,135301
+Generator,SAPHWF1,Wind NSW,127002
+Generator,STWF1,Wind NSW,117801
+Generator,TARALGA1,Wind NSW,"119,601,119,602,119,000"
+Generator,WOODLWN1,Wind NSW,124001
+Generator,WRWF1,Wind NSW,127701
+Generator,CLRKCWF1,Wind QLD,198801
+Generator,CLRKCWF2,Wind QLD,198802
+Generator,COOPGWF1,Wind QLD,"105,701,105,702"
+Generator,DULAWF1,Wind QLD,170601
+Generator,KABANWF1,Wind QLD,202001
+Generator,KEPWF1,Wind QLD,146501
+Generator,MCINTYR1,Wind QLD,133202
+Generator,MEWF1,Wind QLD,125801
+Generator,WAMBOWF1,Wind QLD,228701
+Generator,WAMBOWF2,Wind QLD,228702
+Generator,BLUFF1,Wind SA,108502
+Generator,CATHROCK,Wind SA,104201
+Generator,CLEMGPWF,Wind SA,104701
+Generator,CNUNDAWF,Wind SA,103701
+Generator,GSWF1A,Wind SA,196402
+Generator,GSWF1B1,Wind SA,240401
+Generator,HALLWF1,Wind SA,108701
+Generator,HALLWF2,Wind SA,108801
+Generator,HDWF1,Wind SA,130001
+Generator,HDWF2,Wind SA,137601
+Generator,HDWF3,Wind SA,138101
+Generator,LGAPWF1,Wind SA,111901
+Generator,LGAPWF2,Wind SA,157402
+Generator,LKBONNY1,Wind SA,110801
+Generator,LKBONNY2,Wind SA,110901
+Generator,LKBONNY3,Wind SA,111001
+Generator,MTMILLAR,Wind SA,114301
+Generator,NBHWF1,Wind SA,131101
+Generator,PAREPW1,Wind SA,137501
+Generator,SNOWNTH1,Wind SA,118102
+Generator,SNOWSTH1,Wind SA,118101
+Generator,SNOWTWN1,Wind SA,118001
+Generator,STARHLWF,Wind SA,118601
+Generator,WATERLWF,Wind SA,"122,301,122,302"
+Generator,WGWF1,Wind SA,"123,102,123,104"
+Generator,WPWF,Wind SA,122401
+Generator,CTHLWF1,Wind TAS,126002
+Generator,GRANWF1,Wind TAS,132201
+Generator,MUSSELR1,Wind TAS,114901
+Generator,WOOLNTH1,Wind TAS,"124,201,124,202,124,000"
+Generator,ARWF1,Wind VIC,146201
+Generator,BALDHWF1,Wind VIC,100601
+Generator,BRYB1WF1,Wind VIC,101803
+Generator,BRYB2WF2,Wind VIC,101804
+Generator,BULGANA1,Wind VIC,128901
+Generator,CHALLHWF,Wind VIC,104401
+Generator,CHYTWF1,Wind VIC,126301
+Generator,CROWLWF1,Wind VIC,156601
+Generator,DUNDWF1,Wind VIC,130302
+Generator,DUNDWF2,Wind VIC,130303
+Generator,DUNDWF3,Wind VIC,130304
+Generator,ELAINWF1,Wind VIC,111301
+Generator,GPWFEST1,Wind VIC,148703
+Generator,GPWFEST2,Wind VIC,148704
+Generator,GPWFEST3,Wind VIC,148705
+Generator,GPWFWST1,Wind VIC,199001
+Generator,GPWFWST2,Wind VIC,199002
+Generator,HD1WF1,Wind VIC,108901
+Generator,KIATAWF1,Wind VIC,138201
+Generator,MACARTH1,Wind VIC,112801
+Generator,MERCER01,Wind VIC,114201
+Generator,MLWF1,Wind VIC,133101
+Generator,MOORAWF1,Wind VIC,142502
+Generator,MRTLSWF1,Wind VIC,113801
+Generator,MTGELWF1,Wind VIC,"114,101,114,102,114,000,000,000,000,000,000,000"
+Generator,MUWAWF1,Wind VIC,126202
+Generator,MUWAWF2,Wind VIC,150601
+Generator,OAKLAND1,Wind VIC,115201
+Generator,PORTWF,Wind VIC,"116,501,116,502,116,000"
+Generator,RYANCWF1,Wind VIC,117601
+Generator,SALTCRK1,Wind VIC,124401
+Generator,STOCKYD1,Wind VIC,"118,702,118,703,118,000"
+Generator,WAUBRAWF,Wind VIC,"122,501,122,502,122,000"
+Generator,YAMBUKWF,Wind VIC,116401
+Generator,YENDWF1,Wind VIC,111401
+Generator,YSWF1,Wind VIC,156701
+Generator,AVLSF1,Solar NSW,171502
+Generator,BERYLSF1,Solar NSW,141601
+Generator,BOMENSF1,Solar NSW,155401
+Generator,BROKENH1,Solar NSW,126601
+Generator,COLEASF1,Solar NSW,142001
+Generator,CRWASF1,Solar NSW,152001
+Generator,DARLSF1,Solar NSW,151801
+Generator,FINLYSF1,Solar NSW,168002
+Generator,GESF1,Solar NSW,217801
+Generator,GNNDHSF1,Solar NSW,158501
+Generator,GOONSF1,Solar NSW,140001
+Generator,GULLRSF1,Solar NSW,143201
+Generator,HILLSTN1,Solar NSW,145201
+Generator,JEMALNG1,Solar NSW,152101
+Generator,JUNEESF1,Solar NSW,152601
+Generator,LIMOSF11,Solar NSW,145302
+Generator,LIMOSF21,Solar NSW,167502
+Generator,MANSLR1,Solar NSW,128002
+Generator,METZSF1,Solar NSW,162801
+Generator,MOLNGSF1,Solar NSW,164101
+Generator,MOREESF1,Solar NSW,131801
+Generator,NEVERSF1,Solar NSW,141401
+Generator,NEWENSF1,Solar NSW,185405
+Generator,NEWENSF2,Solar NSW,185406
+Generator,NYNGAN1,Solar NSW,132301
+Generator,PARSF1,Solar NSW,140201
+Generator,SEBSF1,Solar NSW,192702
+Generator,STUBSF1,Solar NSW,189401
+Generator,STUBSF2,Solar NSW,189402
+Generator,SUNRSF1,Solar NSW,144701
+Generator,SUNTPSF1,Solar NSW,158602
+Generator,WAGGNSF1,Solar NSW,"151,401,151,402"
+Generator,WELLSF1,Solar NSW,151502
+Generator,WELNSF1,Solar NSW,196001
+Generator,WLWLSF1,Solar NSW,171203
+Generator,WLWLSF2,Solar NSW,171204
+Generator,WOLARSF1,Solar NSW,171601
+Generator,WRSF1,Solar NSW,166201
+Generator,WSTWYSF1,Solar NSW,190402
+Generator,WYASF1,Solar NSW,186502
+Generator,ALDGASF1,Solar QLD,150901
+Generator,BLUEGSF1,Solar QLD,190301
+Generator,BRDDSF01,Solar QLD,171801
+Generator,BUSF1,Solar QLD,171101
+Generator,CHILDSF1,Solar QLD,144102
+Generator,CLARESF1,Solar QLD,138301
+Generator,CLERMSF1,Solar QLD,156201
+Generator,COLUMSF1,Solar QLD,145902
+Generator,CSPVPS1,Solar QLD,134901
+Generator,DAYDSF1,Solar QLD,151601
+Generator,DDSF1,Solar QLD,154501
+Generator,EDENVSF1,Solar QLD,316901
+Generator,EMERASF1,Solar QLD,144302
+Generator,GANGARR1,Solar QLD,153802
+Generator,GUSF1,Solar QLD,242201
+Generator,HAMISF1,Solar QLD,140801
+Generator,HAUGHT11,Solar QLD,156401
+Generator,HAYMSF1,Solar QLD,151701
+Generator,HUGSF1,Solar QLD,138801
+Generator,KEPSF1,Solar QLD,146502
+Generator,KINGASF1,Solar QLD,152802
+Generator,KSP1,Solar QLD,137801
+Generator,LILYSF1,Solar QLD,138401
+Generator,LRSF1,Solar QLD,166701
+Generator,MARYRSF1,Solar QLD,168901
+Generator,MIDDLSF1,Solar QLD,153702
+Generator,MOUSF1,Solar QLD,188002
+Generator,MUCRKSF1,Solar QLD,190501
+Generator,OAKEY1SF,Solar QLD,138601
+Generator,OAKEY2SF,Solar QLD,159101
+Generator,RRSF1,Solar QLD,140101
+Generator,RUGBYR1,Solar QLD,149301
+Generator,SMCSF1,Solar QLD,143701
+Generator,SRSF1,Solar QLD,144401
+Generator,WANDSF1,Solar QLD,145501
+Generator,WANDSF2,Solar QLD,243701
+Generator,WARWSF1,Solar QLD,153004
+Generator,WARWSF2,Solar QLD,153005
+Generator,WDGPH1,Solar QLD,201101
+Generator,WHITSF1,Solar QLD,140701
+Generator,WOOLGSF1,Solar QLD,167202
+Generator,YARANSF1,Solar QLD,159901
+Generator,ADPPV1,Solar SA,184408
+Generator,ADPPV2,Solar SA,184407
+Generator,BNGSF1,Solar SA,158901
+Generator,BNGSF2,Solar SA,158701
+Generator,BOWWPV1,Solar SA,139305
+Generator,HVWWPV1,Solar SA,184602
+Generator,MANNSF2,Solar SA,241001
+Generator,MAPS2PV1,Solar SA,184701
+Generator,MAPS3PV1,Solar SA,201001
+Generator,MBPS2PV1,Solar SA,185301
+Generator,MWPS1PV1,Solar SA,184902
+Generator,MWPS2PV1,Solar SA,185001
+Generator,MWPS3PV1,Solar SA,185102
+Generator,MWPS4PV1,Solar SA,185201
+Generator,PAREPS1,Solar SA,139201
+Generator,TB2SF1,Solar SA,157501
+Generator,TBSF1,Solar SA,139701
+Generator,BANN1,Solar VIC,149201
+Generator,COHUNSF1,Solar VIC,169102
+Generator,Corop Solar Farm,Solar VIC,261501
+Generator,CRWARP1,Solar VIC,168701
+Generator,GANNSF1,Solar VIC,139601
+Generator,GIRGSF,Solar VIC,198201
+Generator,GLENSF1,Solar VIC,162301
+Generator,GLRWNSF1,Solar VIC,154101
+Generator,GOESF1,Solar VIC,279301
+Generator,KARSF1,Solar VIC,142402
+Generator,Kerang Hybrid Solar,Solar VIC,198002
+Generator,KERNGSP1,Solar VIC,309101
+Generator,KIAMSF1,Solar VIC,160202
+Generator,MOKOSF1,Solar VIC,199901
+Generator,NUMURSF1,Solar VIC,146101
+Generator,WEMENSF1,Solar VIC,156301
+Generator,WINTSF1,Solar VIC,167401
+Generator,WNSF1,Solar VIC,149901
+Generator,WUNUSF1,Solar VIC,192903
+Generator,YATSF1,Solar VIC,"142,302,142,304"
+Generator,Baldon Wind Farm,New Wind NSW,221301
+Generator,Bullawah Wind Farm Stage 1,New Wind NSW,253201
+Generator,Coppabella Hybrid Generator,New Wind NSW,158101
+Generator,Dinawan Energy Hub Wind 1,New Wind NSW,192407
+Generator,Junction Rivers Wind,New Wind NSW,253603
+Generator,Kerrs Creek Wind Farm,New Wind NSW,218801
+Generator,Liverpool Range Wind Farm,New Wind NSW,112001
+Generator,New Wind Farm NSW 1,New Wind NSW,Generic regional object
+Generator,New Wind Farm NSW 2,New Wind NSW,Generic regional object
+Generator,Spicers Creek Wind Farm,New Wind NSW,258301
+Generator,Thunderbolt Wind Farm,New Wind NSW,220101
+Generator,Upper Hunter Energy Park - Wind,New Wind NSW,127501
+Generator,Uungula Wind Farm,New Wind NSW,128301
+Generator,Valley of the Winds 1,New Wind NSW,289201
+Generator,Valley of the Winds 2,New Wind NSW,289202
+Generator,Valley of the Winds 3,New Wind NSW,289203
+Generator,Yanco Delta Wind Farm,New Wind NSW,226601
+Generator,Banana Range Wind Farm,New Wind QLD,198604
+Generator,Boulder Creek Wind Farm,New Wind QLD,200302
+Generator,Bungaban Wind Farm,New Wind QLD,229301
+Generator,Cattle Creek Wind Farm,New Wind QLD,275203
+Generator,Gawara Baya Wind,New Wind QLD,230402
+Generator,Lotus Creek Wind Farm,New Wind QLD,200201
+Generator,Moah Creek Wind Farm,New Wind QLD,225301
+Generator,New Wind Farm QLD 1,New Wind QLD,Generic regional object
+Generator,New Wind Farm QLD 2,New Wind QLD,Generic regional object
+Generator,Tarong West Wind Farm (Ironleaf),New Wind QLD,225201
+Generator,Theodore Wind Farm 1,New Wind QLD,260301
+Generator,Theodore Wind Farm 2,New Wind QLD,260302
+Generator,Carmodys Hill Wind Farm,New Wind SA,104003
+Generator,Goyder North Renewable Energy Facility,New Wind SA,
+Generator,Goyder North Wind Farm 1,New Wind SA,275701
+Generator,Goyder North Wind Farm 2,New Wind SA,275702
+Generator,New Wind Farm SA 1 ,New Wind SA,Generic regional object
+Generator,Palmer Wind Farm,New Wind SA,133701
+Generator,Whyte Yarcowie Wind Farm,New Wind SA,128501
+Generator,Willogoleche 2 Wind Farm,New Wind SA,328001
+Generator,Bellbay Wind Farm,New Wind TAS,240801
+Generator,Cellars Hill Wind Farm,New Wind TAS,246801
+Generator,New Wind Farm TAS 1,New Wind TAS,Generic regional object
+Generator,Port Latta Wind Farm,New Wind TAS,222701
+Generator,Delburn Wind Farm,New Wind VIC,194901
+Generator,Hexham Wind Farm Wind,New Wind VIC,128703
+Generator,Inverleigh Wind Farm,New Wind VIC,163102
+Generator,Kentbruck Green Power Hub,New Wind VIC,188801
+Generator,New Wind Farm VIC 1,New Wind VIC,Generic regional object
+Generator,New Wind Farm VIC 2,New Wind VIC,Generic regional object
+Generator,Willatook Wind Farm,New Wind VIC,128603
+Generator,Woolsthorpe Wind Farm,New Wind VIC,124301
+Generator,Bendemeer Solar,New Solar NSW,237202
+Generator,Birriwa Solar Farm,New Solar NSW,303001
+Generator,Blind Creek Solar Farm,New Solar NSW,201702
+Generator,Brewongle Solar Farm,New Solar NSW,159201
+Generator,Cobbora Solar Farm,New Solar NSW,280901
+Generator,CUSF1,New Solar NSW,263001
+Generator,Dinawan Energy Hub - Solar,New Solar NSW,192404
+Generator,Dunedoo Solar Farm,New Solar NSW,163201
+Generator,Glanmire Solar Farm,New Solar NSW,289402
+Generator,Goulburn River Solar Farm And BESS,New Solar NSW,219003
+Generator,Gundary Solar Farm,New Solar NSW,221202
+Generator,Gunning Solar Farm,New Solar NSW,218601
+Generator,Hay Sun Farm,New Solar NSW,145101
+Generator,Kayuga Solar Farm,New Solar NSW,328901
+Generator,Lockhart Hybrid Facility - Solar,New Solar NSW,262601
+Generator,Marulan Solar Farm,New Solar NSW,269001
+Generator,Maryvale Solar,New Solar NSW,159502
+Generator,Merino Solar,New Solar NSW,221102
+Generator,Middlebrook Solar,New Solar NSW,243002
+Generator,Moama Solar Farm 1_5,New Solar NSW,152701
+Generator,Moama Solar Farm 6_10,New Solar NSW,152702
+Generator,MULWASF1,New Solar NSW,199801
+Generator,Muswellbrook Solar Farm,New Solar NSW,279401
+Generator,New England 2 Hybrid DUID 1 SF,New Solar NSW,328701
+Generator,New England 2 Hybrid DUID 2 SF,New Solar NSW,328801
+Generator,New Solar Farm NSW 1,New Solar NSW,Generic regional object
+Generator,New Solar Farm NSW 2,New Solar NSW,Generic regional object
+Generator,QPSFB1,New Solar NSW,185703
+Generator,Sandy Creek Solar Farm,New Solar NSW,289501
+Generator,Tallawang Solar,New Solar NSW,280002
+Generator,Tilbuster Solar Farm,New Solar NSW,168301
+Generator,Wattle Creek Energy Hub - Solar,New Solar NSW,263502
+Generator,Aramara Solar Farm,New Solar QLD,142602
+Generator,Banksia Solar Farm,New Solar QLD,257801
+Generator,Bullyard Solar Farm,New Solar QLD,212501
+Generator,Fraser Coast Hybrid Plant,New Solar QLD,141901
+Generator,Ganymirra Solar,New Solar QLD,289302
+Generator,Guthries Gap Solar,New Solar QLD,306802
+Generator,Haughton Solar Farm Stage 2,New Solar QLD,193301
+Generator,Hopeland Solar Farm,New Solar QLD,256201
+Generator,Lower Wonga Solar Farm and BESS Solar,New Solar QLD,230002
+Generator,Majors Creek Solar,New Solar QLD,276502
+Generator,Moranbah Solar Farm,New Solar QLD,125001
+Generator,New Solar Farm QLD 1,New Solar QLD,Generic regional object
+Generator,New Solar Farm QLD 2,New Solar QLD,Generic regional object
+Generator,Punch and Creek Solar Farm 1,New Solar QLD,281502
+Generator,Punch and Creek Solar Farm 2,New Solar QLD,
+Generator,Smoky Creek Solar,New Solar QLD,170802
+Generator,Tumuruu Solar Farm,New Solar QLD,322702
+Generator,Bundey Solar,New Solar SA,269304
+Generator,New Solar Farm SA 1,New Solar SA,Generic regional object
+Generator,Solar River Solar Farm,New Solar SA,255002
+Generator,Vast Solar 1,New Solar SA,231101
+Generator,New Solar Farm TAS 1,New Solar TAS,Generic regional object
+Generator,Northern Midlands Solar Farm 1,New Solar TAS,238901
+Generator,Northern Midlands Solar Farm 2,New Solar TAS,238902
+Generator,Weasel Solar Farm,New Solar TAS,329001
+Generator,Axedale Solar Farm,New Solar VIC,195802
+Generator,Barnawartha Solar,New Solar VIC,289702
+Generator,Barwon Solar Farm,New Solar VIC,246701
+Generator,Campbells Forest Solar Farm,New Solar VIC,197202
+Generator,Derby Solar Farm,New Solar VIC,251302
+Generator,Elaine Solar Farm,New Solar VIC,233602
+Generator,Fosterville Solar Farm,New Solar VIC,224102
+Generator,Frasers Solar Farm,New Solar VIC,197102
+Generator,Fulham Solar Farm,New Solar VIC,197702
+Generator,Horsham Solar Farm,New Solar VIC,195401
+Generator,LANCSF1,New Solar VIC,268401
+Generator,Mortlake Energy Hub Solar,New Solar VIC,202202
+Generator,New Solar Farm VIC  1,New Solar VIC,Generic regional object
+Generator,New Solar Farm VIC  2,New Solar VIC,Generic regional object
+Generator,Nowingi Solar Farm (KCI),New Solar VIC,284301
+Generator,Ravenswood Solar,New Solar VIC,268801
+Generator,West Mokoan Solar Farm,New Solar VIC,200003
+Generator,Winton North Solar Farm,New Solar VIC,303801
+Generator,PV NSW,Rooftop PV,Regional DPV
+Generator,PV QLD,Rooftop PV,Regional DPV
+Generator,PV SA,Rooftop PV,Regional DPV
+Generator,PV TAS,Rooftop PV,Regional DPV
+Generator,PV VIC,Rooftop PV,Regional DPV
+Generator,BASS Outage Dummy Gen,Dummy Generators,Dummy generators for transmission constraints
+Generator,BCDU Reclass Outage Dummy Gen,Dummy Generators,Dummy generators for transmission constraints
+Generator,BCDU SCC Outage Dummy Gen,Dummy Generators,Dummy generators for transmission constraints
+Generator,HYSE Reclass Outage Dummy Gen,Dummy Generators,Dummy generators for transmission constraints
+Generator,HYSE SCC Outage Dummy Gen,Dummy Generators,Dummy generators for transmission constraints
+Generator,VSML SCC Outage Dummy Gen,Dummy Generators,Dummy generators for transmission constraints
+Generator,Baroota Pumped Hydro Project,Hydro SA,168202
+Generator,CNSW HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,CQ HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,CSA HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,GG HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,MEL HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,NNSW HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,NQ HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,NSA HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,SESA HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,SEV HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,SNSW HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,SNW HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,SQ HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,TAS HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,WNV HLoad_F,Electrolyser flexible load for Domestic as anti-generator,
+Generator,CNSW HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,CQ HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,CSA HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,GG HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,MEL HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,NNSW HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,NQ HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,NSA HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,SESA HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,SEV HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,SNSW HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,SNW HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,SQ HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,TAS HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,
+Generator,WNV HLoad_G,Electrolyser flexible load for Green Commodities as anti-generator,

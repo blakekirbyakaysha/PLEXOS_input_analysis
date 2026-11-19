@@ -1,0 +1,32 @@
+# ---- Python / environments ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.conda-env/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# ---- Large data: re-download or regenerate on a new machine ----
+*.zip
+*.parquet
+*.duckdb
+*.duckdb.wal
+
+# ---- Office lock files / OS ----
+~$*
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- Project-specific large data ----
+Demand_Analysis/data/
+ESOO_gas_consumption/RE_gen.csv
+ESOO_gas_consumption/Available Capacity.csv
+ESOO_gas_consumption/Generation.csv
+ESOO_gas_consumption/load.csv
+ESOO_gas_consumption/Offtake.csv
+ESOO_gas_consumption/residual_demand_outputs/regional_residual_demand.csv
+ESOO_gas_consumption/analysis_outputs/regional_generation.csv
+ESOO_gas_consumption/analysis_outputs/capacity_factor_by_unit_day.csv
